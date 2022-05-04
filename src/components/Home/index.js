@@ -36,6 +36,6 @@ const Home = () => {
             <Logo />
         </div>
     );
-};
+}
 
 export default Home;
