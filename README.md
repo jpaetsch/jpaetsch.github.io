@@ -23,7 +23,7 @@ Add better animations and continue to design a more unique site - currently work
 * FortAwesome (free icons and fonts)
 
 ## Inspiration
-Wanted to set up a lightstrip and have it controllable by an app I program from my phone (also see the controller app repository).  Also want to eventually connect to the Spotify API to automatically set the lights depending on songs, genres, etc and have 'smart, responsive' patterns.
+Want to get experience with frontend development and have a website of my own to personalize and continue to improve over time as I add new projects to my portfolio.
 
 ## Sources
 Online resources used extensively.
