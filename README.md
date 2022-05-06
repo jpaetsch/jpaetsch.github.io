@@ -23,7 +23,7 @@ Add better animations and continue to design a more unique site - currently work
 * FortAwesome (free icons and fonts)
 
 ## Inspiration
-Want to get experience with frontend development and have a website of my own to personalize and continue to improve over time as I add new projects to my portfolio.
+At the beginning of this project, I had little familarity with frontend design. I wanted to get experience with frontend development and have a website of my own to personalize and continue to improve over time as I add new projects to my portfolio. In addition, I want to practice animation, responsive web design, and other modern web development concepts.
 
 ## Sources
 Online resources used extensively.

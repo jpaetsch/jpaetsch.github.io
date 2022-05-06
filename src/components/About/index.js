@@ -1,6 +1,9 @@
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState } from 'react';
+import { faAndroid, faAws, faCanadianMapleLeaf, faDocker, faGithubSquare, faReact } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Loader from 'react-loaders';
 
 const About = () => {
 
@@ -15,6 +18,7 @@ const About = () => {
     }, []);
 
     return(
+        <>
         <div className='container about-page'>
             <div className='text-zone'>
                 <h1>
@@ -39,11 +43,28 @@ const About = () => {
             <div className='stage-cube-cont'>
                 <div className='cubespinner'>
                     <div className='face1'>
-                        {/* continue with fontawesomeicon here!! */}
+                        <FontAwesomeIcon icon={faAndroid} color='#3ddc84' />
+                    </div>
+                    <div className='face2'>
+                        <FontAwesomeIcon icon={faAws} color='#ff9900' />
+                    </div>
+                    <div className='face3'>
+                        <FontAwesomeIcon icon={faCanadianMapleLeaf} color='#dd0031' />
+                    </div>
+                    <div className='face4'>
+                        <FontAwesomeIcon icon={faDocker} color='#0db7ed' />
+                    </div>
+                    <div className='face5'>
+                        <FontAwesomeIcon icon={faGithubSquare} color='#171515' />
+                    </div>
+                    <div className='face6'>
+                        <FontAwesomeIcon icon={faReact} color='#5ed4f4' />
                     </div>
                 </div>
             </div>
         </div>
+        <Loader type='pacman' />
+        </>
     );
 }
 
