@@ -1,18 +1,43 @@
 import Loader from 'react-loaders';
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
 
     const [letterClass, setLetterClass] = useState('text-animate');
     const strContactMe = 'Contact me'.split('');
 
+    const refContactForm = useRef();
+
     useEffect(() => {
         setTimeout(() => {
             setLetterClass('text-animate-hover')
         }, 3000);
     }, []);
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        // This is exposed on a public repository, but I set up a new email account
+        // for this api point - the worst that could happen is the 200 email quota is used up
+        emailjs.sendForm(
+            'service_08ipp9j',
+            'template_7wxksrn',
+            refContactForm.current,
+            'o6N2EflqLaeoepgUP'
+        )
+        .then(
+            () => {
+                alert('Message successfully sent!');
+                window.location.reload(false);
+            },
+            () => {
+                alert('Failed to send the message, please try again');
+            }
+        )
+    }
 
     return (
         <>
@@ -27,7 +52,7 @@ const Contact = () => {
                         any other comments or questions!
                     </p>
                     <div className='contact-form'>
-                        <form>
+                        <form ref={refContactForm} onSubmit={sendEmail}>
                             <ul>
                                 <li className='half'>
                                     <input type='text' name='name' placeholder='Name' required />

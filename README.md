@@ -14,12 +14,17 @@ A personal website for my personal information and portfolio. This project also 
 The site is hosted at [](https://jpaetsch.github.io/)
 
 ## Potential Improvements
-Add better animations and continue to design a more unique site - currently working closely using an online example as a [template](https://www.youtube.com/watch?v=bmpI252DmiI).
+* Implement a different loader
+* Change all colours and unify to a theme
+* Swap out the main logo
+* Improve the animations especially the cube spinner
+* Add portfolio and additional pages
+* Make more responsive and mobile-friendly
 
 ## Technologies
 * React (JavaScript library)
+* SASS (CSS extension language)
 * GitHub Pages (deployment/hosting)
-* GSAP Animation (library)
 * FortAwesome (free icons and fonts)
 
 ## Inspiration
@@ -27,4 +32,4 @@ At the beginning of this project, I had little familarity with frontend design. 
 
 ## Sources
 Online resources used extensively.
-Original site was created following the [YouTube tutorial](https://www.youtube.com/watch?v=bmpI252DmiI) made by the[freeCodeCamp.org channel](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ) and frontend developer Slobodan
+Original site was created following the [YouTube tutorial](https://www.youtube.com/watch?v=bmpI252DmiI) made by the[freeCodeCamp.org channel](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ) and frontend developer Slobodan.
