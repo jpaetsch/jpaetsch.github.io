@@ -23,7 +23,7 @@ The site is hosted [here](https://jpaetsch.github.io/)
 
 ## Technologies
 * React (JavaScript library)
-* SASS (CSS extension language)
+* CSS, HTML, and SASS (CSS extension language)
 * GitHub Pages (deployment/hosting)
 * FortAwesome (free icons and fonts)
 
