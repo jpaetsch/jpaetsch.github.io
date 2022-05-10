@@ -18,6 +18,7 @@ const Contact = () => {
     }, []);
 
     const sendEmail = (e) => {
+        // prevent form submission default (page refresh, etc.) as we will handle data input ourselves
         e.preventDefault();
 
         // This is exposed on a public repository, but I set up a new email account
@@ -29,15 +30,14 @@ const Contact = () => {
             'o6N2EflqLaeoepgUP'
         )
         .then((result) => {
-                alert('Message successfully sent!');
-                console.log(result.text);
-                window.location.reload(false);
-            }, (error) => {
-                alert('Failed to send the message, please try again');
-                console.log(error.text);
-            }
-        )
-    }
+            alert('Message successfully sent!');
+            console.log(result.text);
+            window.location.reload(false);
+        }, (error) => {
+            alert('Failed to send the message, please try again');
+            console.log(error.text);
+        });
+    };
 
     return (
         <>
