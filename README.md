@@ -23,7 +23,7 @@ The site is hosted [here](https://jpaetsch.github.io/)
 
 ## Technologies
 * React (JavaScript library)
-* SASS (CSS extension language)
+* CSS, HTML, and SASS (CSS extension language)
 * GitHub Pages (deployment/hosting)
 * FortAwesome (free icons and fonts)
 
@@ -32,5 +32,5 @@ At the beginning of this project, I had little familarity with the React library
 
 ## Sources
 Online resources used extensively.
-Original site was created following the [YouTube tutorial](https://www.youtube.com/watch?v=bmpI252DmiI) made by the[freeCodeCamp.org channel](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ) and frontend developer Slobodan.
+Original site was created following the [YouTube tutorial](https://www.youtube.com/watch?v=bmpI252DmiI) made by the [freeCodeCamp.org channel](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ) and frontend developer Slobodan.
 [This](https://www.youtube.com/watch?v=4UZrsTqkcW4&ab_channel=freeCodeCamp.org) comprehensive React tutorial was also very helpful in getting a deeper dive into more advanced concepts.
