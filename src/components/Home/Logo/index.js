@@ -47,7 +47,7 @@ const Logo = () => {
                 </g>
             </svg>
         </div>
-    )
-}
+    );
+};
 
 export default Logo;

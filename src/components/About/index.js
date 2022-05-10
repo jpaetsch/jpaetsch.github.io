@@ -17,7 +17,7 @@ const About = () => {
         }, 3000);
     }, []);
 
-    return(
+    return (
         <>
         <div className='container about-page'>
             <div className='text-zone'>
@@ -66,6 +66,6 @@ const About = () => {
         <Loader type='pacman' />
         </>
     );
-}
+};
 
 export default About;

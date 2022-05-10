@@ -28,13 +28,13 @@ const Contact = () => {
             refContactForm.current,
             'o6N2EflqLaeoepgUP'
         )
-        .then(
-            () => {
+        .then((result) => {
                 alert('Message successfully sent!');
+                console.log(result.text);
                 window.location.reload(false);
-            },
-            () => {
+            }, (error) => {
                 alert('Failed to send the message, please try again');
+                console.log(error.text);
             }
         )
     }
@@ -76,7 +76,7 @@ const Contact = () => {
             </div>
             <Loader type='pacman' />
         </>
-    )
-}
+    );
+};
 
 export default Contact;

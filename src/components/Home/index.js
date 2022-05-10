@@ -40,6 +40,6 @@ const Home = () => {
         <Loader type='pacman' />
         </>
     );
-}
+};
 
 export default Home;
