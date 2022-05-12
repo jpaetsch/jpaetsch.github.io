@@ -10,7 +10,7 @@
 }
 
 .tags {
-    color: #ffd700;
+    color: #c49b3c;
     opacity: 0.6;
     position: absolute;
     bottom: 0;
@@ -54,7 +54,7 @@
     h1 {
         font-size: 53px;
         font-family: 'Coolvetica';
-        color: #ffd700;
+        color: #c49b3c;
         font-weight: 400;
         margin-top: 0;
         position: relative;
@@ -87,7 +87,7 @@
 
     p {
         font-style: 13px;
-        color: #ffffff;
+        color: #f0ead6;
         font-family: sans-serif;
         font-weight: 300;
         min-width: fit-content;
@@ -108,7 +108,7 @@
     
     .text-animate-hover {
         &:hover {
-            color: #ffffff;
+            color: #f0ead6;
         }
     }
 }

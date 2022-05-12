@@ -20,6 +20,6 @@
   ],
   "start_url": "https://jpaetsch.github.io/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#0d0a0b",
+  "background_color": "#f0ead6"
 }
