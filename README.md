@@ -14,17 +14,7 @@ A personal website for my personal information and portfolio. This project also 
 The site is hosted [here](https://jpaetsch.github.io/)
 
 ## Potential Improvements
-* Implement a different loader
-* Change all colours and unify to a theme, currently:
-    - Dark:         #0d0a0b
-    - Dark Grey:    #1f1f1f
-    - Medium Grey:  #454955
-    - Gold:         #c49b3c
-    - White:        #f0ead6
-* Swap out the main logo
-* Improve the animations especially the cube spinner
-* Add portfolio and additional pages
-* Make more responsive and mobile-friendly
+* Continue to improve, see GitHub Issues
 
 ## Technologies
 * React (JavaScript library)
