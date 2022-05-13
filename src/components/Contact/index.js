@@ -1,12 +1,15 @@
 import Loader from 'react-loaders';
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
+import SendEmailLoader from './SendEmailLoader';
 import { useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
 
     const [letterClass, setLetterClass] = useState('text-animate');
+    const [isLoading, setIsLoading] = useState(false);
+
     const strContactMe = 'Contact me'.split('');
 
     const refContactForm = useRef();
@@ -21,6 +24,8 @@ const Contact = () => {
         // prevent form submission default (page refresh, etc.) as we will handle data input ourselves
         e.preventDefault();
 
+        setIsLoading(true);
+
         // This is exposed on a public repository, but I set up a new email account
         // for this api point - the worst that could happen is the 200 email quota is used up
         emailjs.sendForm(
@@ -32,9 +37,11 @@ const Contact = () => {
         .then((result) => {
             alert('Message successfully sent!');
             console.log(result.text);
+            setIsLoading(false);
             window.location.reload(false);
         }, (error) => {
             alert('Failed to send the message, please try again');
+            setIsLoading(false);
             console.log(error.text);
         });
     };
@@ -66,9 +73,11 @@ const Contact = () => {
                                 <li>
                                     <textarea name='message' placeholder='Message' required></textarea>
                                 </li>
-                                <li>
-                                    <input type='submit' className='flat-button' value='SEND' />
-                                </li>
+                                {isLoading ? <SendEmailLoader /> : 
+                                    <li>
+                                        <input type='submit' className='flat-button' value='SEND' disabled={isLoading} />
+                                    </li>
+                                }
                             </ul>
                         </form>
                     </div>
