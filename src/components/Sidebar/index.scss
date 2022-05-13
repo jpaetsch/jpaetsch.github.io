@@ -5,20 +5,25 @@
     position: absolute;
     z-index: 3;
     min-height: 500px;
+    border-right: 2px solid #454955;
 
-    .logo {
+    .top-widget {
         display: block;
         padding: 8px 0;
 
         img {
             display: block;
             margin: 8px auto;
-            width: 24px;
+            width: 40px;
             height: auto;
+            
+            &.upper-pic {
+                border: 2px solid #454955;
+                border-radius: 6px;
+            }
 
-            &.sub-logo {
+            &.lower-name {
                 width: 50px;
-
             }
         }
     }

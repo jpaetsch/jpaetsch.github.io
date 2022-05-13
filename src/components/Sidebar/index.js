@@ -2,16 +2,16 @@ import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link, NavLink } from 'react-router-dom';
-import LogoS from '../../assets/images/logo-s.png';
-import LogoSubtitle from '../../assets/images/logo_sub.png';
+import ProfilePic from '../../assets/images/profile-pic.jpg';
+import Signature from '../../assets/images/name-signature.png';
 import './index.scss';
 
 const Sidebar = () => {
     return (
         <div className='nav-bar'>
-            <Link className='logo' to='/'>
-                <img src={LogoS} alt='logo' />
-                <img className='sub-logo' src={LogoSubtitle} alt='slobodan' />
+            <Link className='top-widget' to='/'>
+                <img className='upper-pic' src={ProfilePic} alt='Jacob' />
+                <img className='lower-name' src={Signature} alt='Paetsch' />
             </Link>
             <nav>
                 <NavLink exact='true' activeclassname='active' to='/'>
