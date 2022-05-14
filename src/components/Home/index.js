@@ -36,7 +36,7 @@ const Home = () => {
                     </span>
                 </div>
                 </h1>
-                <Link to='/contact' className='flat-button'>CONTACT ME</Link>
+                <Link to='/contact' className='contact-button'>CONTACT ME</Link>
             </div>
         </div>
         <Loader type='line-scale' />
