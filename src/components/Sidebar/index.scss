@@ -20,6 +20,12 @@
             &.upper-pic {
                 border: 2px solid #454955;
                 border-radius: 6px;
+
+                &:hover {
+                    box-shadow:
+                    0.1em 0.1em 1em -0.2em rgba(#1f51ff, 1),
+                    -0.1em -0.1em 1em -0.2em rgba(#1f51ff, 1);
+                }
             }
 
             &.lower-name {

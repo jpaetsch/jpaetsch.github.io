@@ -21,6 +21,7 @@ The site is hosted [here](https://jpaetsch.github.io/)
 * CSS, HTML, and SASS (CSS extension language)
 * GitHub Pages (deployment/hosting)
 * FortAwesome (free icons and fonts)
+* Animate.css (see https://animate.style/)
 
 ## Inspiration
 At the beginning of this project, I had little familarity with the React library or frontend development using JavaScript. I wanted to gain experience in these areas and have a website of my own to personalize and continue to improve over time as I add new projects to my portfolio. In addition, I want to practice animation, responsive web design, and other modern web development concepts.
