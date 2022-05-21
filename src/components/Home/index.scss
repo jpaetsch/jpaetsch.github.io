@@ -217,6 +217,27 @@
       }
 
       // END TEST ZONE
+
+      .sub-button {
+        color: #c49b3c;
+        border: 2px solid #c49b3c;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        text-decoration: none;
+        padding: 0.4em 0.5em;
+        float: center;
+
+        &:hover {
+            box-shadow: 0 0.8em 0.8em -0.4em rgba(#1f51ff, 1);
+            text-shadow:
+            0.1em 0.1em 0.2em #1f51ff,
+            0.1em -0.1em 0.2em #1f51ff, 
+            -0.1em 0.1em 0.2em #1f51ff, 
+            -0.1em -0.1em 0.2em #1f51ff,;
+        }
+      }
 }
 
 @keyframes wordSlide {

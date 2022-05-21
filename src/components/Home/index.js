@@ -52,7 +52,8 @@ const Home = () => {
                     <div className='tl-content'>
                         <h1>My Skills & Experience</h1>
                         <p>Throughout my degree and outside of school, I've worked at a number of companies and gained exposure to a wide range of technical skills.<br /><br />From backend system frameworks to frontend design libraries, I have experience in many different programming languages and architectural design concepts.</p>
-                        {/* <Link to='/contact' className='contact-button'>CONTACT ME</Link> */}
+                        <br />
+                        <Link to='/about' className='sub-button'>View Skills</Link>
                     </div>
                 </div>
                 <div className='tl-item'>
@@ -63,6 +64,8 @@ const Home = () => {
                     <div className='tl-content'>
                         <h1>My Showcases</h1>
                         <p>There's no better way to learn than to get hands-on. I have a number of projects I like to develop outside of work to help with my own learning.<br /><br />One of these projects includes making this website from scratch using React and SCSS! See my GitHub repository for additional projects and code samples.</p>
+                        <br />
+                        <Link to='/about' className='sub-button'>Portfolio Summary</Link>
                     </div>
                 </div>
                 <div className='tl-item'>
@@ -73,6 +76,8 @@ const Home = () => {
                     <div className='tl-content'>
                         <h1>Activities I Enjoy</h1>
                         <p>Since my job involves a lot of sitting, I like a variety of active hobbies! These include rock climbing, biking, basketball, and photography.<br /><br />Although I don't have a website page dedicated to showing off my pictures or other hobbies, feel free to contact me if you think I should add a page for this content!</p>
+                        <br />                    
+                        <Link to='/contact' className='sub-button'>Get In Touch</Link>
                     </div>
                 </div>
                 <div className='tl-item'>
