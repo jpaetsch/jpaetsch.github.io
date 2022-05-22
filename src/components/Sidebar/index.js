@@ -1,5 +1,5 @@
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faHome, faUser, faFolderTree } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link, NavLink } from 'react-router-dom';
 import ProfilePic from '../../assets/images/profile-pic.jpg';
@@ -19,6 +19,9 @@ const Sidebar = () => {
                 </NavLink>
                 <NavLink exact='true' activeclassname='active' className='about-link' to='/about'>
                     <FontAwesomeIcon icon={faUser} color='#4d4d4e' />
+                </NavLink>
+                <NavLink exact='true' activeclassname='active' className='projects-link' to='/projects'>
+                    <FontAwesomeIcon icon={faFolderTree} color='#4d4d4e' />
                 </NavLink>
                 <NavLink exact='true' activeclassname='active' className='contact-link' to='/contact'>
                     <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e' />
