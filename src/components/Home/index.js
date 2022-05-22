@@ -65,7 +65,7 @@ const Home = () => {
                         <h1>My Showcases</h1>
                         <p>There's no better way to learn than to get hands-on. I have a number of projects I like to develop outside of work to help with my own learning.<br /><br />One of these projects includes making this website from scratch using React and SCSS! See my GitHub repository for additional projects and code samples.</p>
                         <br />
-                        <Link to='/about' className='sub-button'>Portfolio Summary</Link>
+                        <Link to='/projects' className='sub-button'>Portfolio Summary</Link>
                     </div>
                 </div>
                 <div className='tl-item'>
