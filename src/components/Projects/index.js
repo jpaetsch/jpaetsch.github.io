@@ -10,6 +10,8 @@ const Projects = () => {
                 <p> test </p>
             </div>
         </div>
+        {/* CONTINUE WITH HEXAGON PROJECT CONTENT HERE */}
+        {/* <div className=''></div> */}
         <Loader type='line-scale' />
         </>
     );
