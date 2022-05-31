@@ -1,4 +1,4 @@
-@use '../../styles/main.scss' as *;
+@use '../../styles/themes';
 
 .home-page {
     .text-zone {
@@ -72,12 +72,15 @@
     }
 
     .contact-button {
-      @include themed() {
-        color: t('test');
-        border: 2px solid t('test');
-      }
-        // color: #c49b3c;
-        // border: 2px solid #c49b3c;
+      
+      // @include themes.themed() {
+      //   color: themes.get('test');
+      //   border-color: themes.get('test');
+      // }
+        // border: 2px solid;
+        color: #c49b3c;
+        border: 2px solid #c49b3c;
+
         font-size: 13px;
         font-weight: 400;
         letter-spacing: 4px;

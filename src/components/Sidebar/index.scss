@@ -1,11 +1,17 @@
+@use '../../styles/themes';
+
 .nav-bar {
-    background: #1f1f1f;
-    width: 60px;
+
+    @include themes.themed() {
+        background: themes.get('sidebar-bg');
+        border-right: themes.get('sidebar-border');
+    }
+
+    width: 70px;
     height: 100%;
     position: absolute;
     z-index: 3;
     min-height: 500px;
-    border-right: 2px solid #454955;
 
     .top-widget {
         display: block;
@@ -18,18 +24,22 @@
             height: auto;
             
             &.upper-pic {
-                border: 2px solid #454955;
+                
+                @include themes.themed() {
+                    border: themes.get('sidebar-border');
+                }
+
                 border-radius: 6px;
 
                 &:hover {
-                    box-shadow:
-                    0.1em 0.1em 1em -0.2em rgba(#1f51ff, 1),
-                    -0.1em -0.1em 1em -0.2em rgba(#1f51ff, 1);
+                    @include themes.themed() {
+                        box-shadow: themes.get('sidebar-highlight-1'), themes.get('sidebar-highlight-2');
+                    }
                 }
             }
 
             &.lower-name {
-                width: 50px;
+                width: 55px;
             }
         }
     }
@@ -45,19 +55,27 @@
 
         a {
             font-size: 22px;
-            color: #454955;
             display: block;
             line-height: 51px;
             height: 51px;
             position: relative;
             text-decoration: none;
 
+            svg {
+                @include themes.themed() {
+                    color: themes.get('sidebar-unselected-major-icon');
+                }
+            }
+
             i {
                 transition: all 0.3s ease-out;
             }
 
             &:hover {
-                color: #c49b3c;
+
+                @include themes.themed() {
+                    color: themes.get('sidebar-highlighted-major-icon');
+                }
 
                 svg {
                     opacity: 0;
@@ -108,7 +126,9 @@
 
         a.active {
             svg {
-                color: #c49b3c;
+                @include themes.themed() {
+                    color: themes.get('sidebar-selected-major-icon');
+                }
             }
         }
     }
@@ -129,9 +149,17 @@
                 display: block;
                 font-size: 15px;
                 line-height: 16px;
+                
+                svg {
+                    @include themes.themed() {
+                        color: themes.get('sidebar-unselected-minor-icon');
+                    }
+                }
 
                 &:hover svg {
-                    color: #c49b3c;
+                    @include themes.themed() {
+                        color: themes.get('sidebar-highlighted-minor-icon');
+                    }
                 }
             }
         }

@@ -1,6 +1,7 @@
-@use './styles/main.scss' as *;
+@use './styles/stylesheet';
 
-$primary-color: $gold;  // used inside animate.css
+// primary-color is used by the loader but doesn't work with my scss theme mixin...
+$primary-color: stylesheet.$gold;
 
 @import 'animate.css';
 @import '~loaders.css/src/animations/line-scale.scss';

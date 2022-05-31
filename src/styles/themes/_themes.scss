@@ -1,10 +1,29 @@
-@use '../abstracts/colors' as *;
+@use '../abstracts/colors';
+@use '../base/fonts';
 
 $themes: (
     original: (
-        test: $gold,
+        // Sidebar Options
+        sidebar-bg: colors.$dark-grey,
+        sidebar-unselected-major-icon: colors.$medium-grey,
+        sidebar-highlighted-major-icon: colors.$gold,
+        sidebar-selected-major-icon: colors.$gold,
+        sidebar-unselected-minor-icon: colors.$medium-grey,
+        sidebar-highlighted-minor-icon: colors.$gold,
+        sidebar-border: 2px solid colors.$medium-grey,
+        sidebar-highlight-1: 0.1em 0.1em 1em -0.2em colors.$blue,
+        sidebar-highlight-2: -0.1em -0.1em 1em -0.2em colors.$blue,
+        sidebar-font: 'Coolvetica',
+
+        // Layout Options
+
+        // Home Page Options
+
+        // About Page Options
+
+        // Contact Page Options
     ),
     light: (
-        test: $blue,
+        
     ),
 );
