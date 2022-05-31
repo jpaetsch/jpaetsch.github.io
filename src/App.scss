@@ -1,7 +1,5 @@
-@use './styles/stylesheet';
-
 // primary-color is used by the loader but doesn't work with my scss theme mixin...
-$primary-color: stylesheet.$gold;
+$primary-color: hsl(42, 54%, 50%);
 
 @import 'animate.css';
 @import '~loaders.css/src/animations/line-scale.scss';
