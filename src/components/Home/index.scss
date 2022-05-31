@@ -10,16 +10,20 @@
         max-height: 90%;
 
         h1 {
-            color: #f0ead6;
+            @include themes.themed() {
+                color: themes.get('home-h1');
+                font-family: themes.get('home-h1-font');
+            }
             font-size: 53px;
             margin: 0;
-            font-family: 'Coolvetica';
             font-weight: 400;
   
             &::before {
                 content: '<h1>';
-                font-family: 'La Belle Aurore', cursive;
-                color: #c49b3c;
+                @include themes.themed() {
+                    color: themes.get('home-h1-open-tag');
+                    font-family: themes.get('home-h1-open-tag-font');
+                }
                 font-size: 18px;
                 position: absolute;
                 margin-top: -40px;
@@ -29,8 +33,10 @@
   
             &::after {
                 content: '<h1/>';
-                font-family: 'La Belle Aurore', cursive;
-                color: #c49b3c;
+                @include themes.themed() {
+                    color: themes.get('home-h1-close-tag');
+                    font-family: themes.get('home-h1-close-tag-font');
+                }
                 font-size: 18px;
                 position: absolute;
                 margin-top: 65px;
@@ -42,10 +48,13 @@
     }
 
     .word-scroller {
-        color: #9e9e9e;
+      @include themes.themed() {
+          color: themes.get('home-scroller');
+          border-top: themes.get('home-scroller-border');
+          font-family: themes.get('home-scroller-font');
+      }
         font-size: 25px;
         margin-top: 10px;
-        font-family: sans-serif;
         font-weight: 400;
         letter-spacing: 3px;
         height: 1.8em;
@@ -54,14 +63,11 @@
         overflow: hidden;
         width: 12em;
         animation: fadeIn 1s 3s backwards;
-        border-top: 1px solid #9e9e9e;
 
         &:hover {
-          text-shadow:
-          0.01em 0.01em 0.15em #1f51ff,
-          0.01em -0.01em 0.15em #1f51ff, 
-          -0.01em 0.01em 0.15em #1f51ff, 
-          -0.01em -0.01em 0.15em #1f51ff;
+            @include themes.themed() {
+                text-shadow: themes.get('home-scroller-highlight-1'), themes.get('home-scroller-highlight-2'), themes.get('home-scroller-highlight-3'), themes.get('home-scroller-highlight-4');
+            }
         }
 
         span {
@@ -73,18 +79,15 @@
 
     .contact-button {
       
-      // @include themes.themed() {
-      //   color: themes.get('test');
-      //   border-color: themes.get('test');
-      // }
-        // border: 2px solid;
-        color: #c49b3c;
-        border: 2px solid #c49b3c;
+      @include themes.themed() {
+        color: themes.get('home-contact-button');
+        border: themes.get('home-contact-button-border');
+        font-family: themes.get('home-contact-button-font')
+      }
 
         font-size: 13px;
         font-weight: 400;
         letter-spacing: 4px;
-        font-family: sans-serif;
         text-decoration: none;
         padding: 10px 18px;
         margin-top: 50px;
@@ -94,33 +97,24 @@
         transition: 0.5s;
 
         &:hover {
-            box-shadow: 0 0.8em 0.8em -0.4em rgba(#1f51ff, 1);
-            text-shadow:
-            0.1em 0.1em 0.2em #1f51ff,
-            0.1em -0.1em 0.2em #1f51ff, 
-            -0.1em 0.1em 0.2em #1f51ff, 
-            -0.1em -0.1em 0.2em #1f51ff,;
+            @include themes.themed() {
+                box-shadow: themes.get('home-contact-button-highlight-bottom');
+                text-shadow: themes.get('home-contact-button-highlight-1'), themes.get('home-contact-button-highlight-2'), themes.get('home-contact-button-highlight-3'), themes.get('home-contact-button-highlight-4');
+            }
             transform: translateY(-0.5em);
         }
     }
 
-    // TEST ZONE
     .timeline {
         display: flex;
-        background-color: #0d0a0b;
+        @include themes.themed() {
+          background-color: themes.get('home-timeline-bg');
+          border: themes.get('home-timeline-border');
+        }
         width: 60%;
         height: 100%;
         position: absolute;
         right: 0;
-        border-left: 2px solid #454955;
-        border-right: 2px solid #454955;
-        border-top: 2px solid #454955;
-
-        // &:hover {
-        //   .tl-item {
-        //     width: 23.3333%;
-        //   }
-        // }
       }
       
       .tl-item {
@@ -129,7 +123,6 @@
         width: 25%;
         height: 100vh;
         min-height: 600px;
-        color: #f0ead6;
         overflow: hidden;
         transition: width 0.5s ease;
 
@@ -137,18 +130,24 @@
           transform: translate3d(0, 0, 0);
           content: '';
           position: absolute;
-          left: 0; top: 0;
-          width: 100%; height: 100%;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
         }
       
         &:after {
-          background: transparentize(#0d0a0b, 0.4);
+          @include themes.themed() {
+            background: themes.get('home-timeline-bg-filter');
+          }
           opacity: 1;
           transition: opacity 0.5s ease;
         }
       
         &:before {
-          background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 75%);
+          @include themes.themed() {
+            background: themes.get('home-timeline-bg-gradient');
+          }
           z-index: 1;
           opacity: 0;
           transform: translate3d(0, 0, 0) translateY(50%);
@@ -156,7 +155,7 @@
         }
       
         &:hover {
-          width: 50% !important;
+          width: 55% !important;
           
           &:after {
             opacity: 0;
@@ -190,11 +189,22 @@
         opacity: 0;
         
         h1 {
-          font-family: sans-serif;
           text-transform: uppercase;
-          color: #1f51ff;
+
+          @include themes.themed() {
+            color: themes.get('home-timeline-content-h1');
+            font-family: themes.get('home-timeline-content-h1-font');
+          }
+
           font-size: 1.8rem;
           font-weight: normal;
+        }
+
+        p {
+          @include themes.themed() {
+            color: themes.get('home-timeline-content-p');
+            font-family: themes.get('home-timeline-content-p-font');
+          }
         }
       }
       
@@ -204,11 +214,19 @@
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
         z-index: 1;
-        border-top: 1px solid #f0ead6;
-        border-bottom: 1px solid #f0ead6;
-        
+
+        @include themes.themed() {
+          border-top: themes.get('home-timeline-year-top');
+          border-bottom: themes.get('home-timeline-year-bottom');
+        }
+
         p {
-          font-family: sans-serif;
+
+          @include themes.themed() {
+            color: themes.get('home-timeline-year');
+            font-family: themes.get('home-timeline-year-font');
+          }
+
           font-size: 1.728rem;
           line-height: 0;
         }
@@ -217,34 +235,34 @@
       .tl-bg {
         transform: translate3d(0, 0, 0);
         position: absolute;
-        width: 100%; height: 100%;
-        top: 0; left: 0;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
         background-size: cover;
         background-position: center center;
         transition: filter 0.5s ease;
         filter: grayscale(100%);
       }
 
-      // END TEST ZONE
-
       .sub-button {
-        color: #c49b3c;
-        border: 2px solid #c49b3c;
+        @include themes.themed() {
+          color: themes.get('home-timeline-button');
+          border: themes.get('home-timeline-button-border');
+          font-family: themes.get('home-timeline-button-font');
+        }
         font-size: 13px;
         font-weight: 400;
         letter-spacing: 4px;
-        font-family: sans-serif;
         text-decoration: none;
         padding: 0.4em 0.5em;
         float: center;
 
         &:hover {
-            box-shadow: 0 0.8em 0.8em -0.4em rgba(#1f51ff, 1);
-            text-shadow:
-            0.1em 0.1em 0.2em #1f51ff,
-            0.1em -0.1em 0.2em #1f51ff, 
-            -0.1em 0.1em 0.2em #1f51ff, 
-            -0.1em -0.1em 0.2em #1f51ff;
+            @include themes.themed() {
+                box-shadow: themes.get('home-timeline-button-highlight-bottom');
+                text-shadow: themes.get('home-timeline-button-highlight-1'), themes.get('home-timeline-button-highlight-2'), themes.get('home-timeline-button-highlight-3'), themes.get('home-timeline-button-highlight-4');
+            }
         }
       }
 }

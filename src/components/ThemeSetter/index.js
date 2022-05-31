@@ -16,5 +16,5 @@ export default function ThemeSetter() {
   );
 }
 
-const themeOptions = [{ value: 'original' }, { value: 'light' }];
+const themeOptions = [{ value: 'original' }, { value: 'bright' }];
 
