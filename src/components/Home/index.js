@@ -22,7 +22,6 @@ const Home = () => {
 
     return (
         <>
-        <ThemeSetter />
         <div className='container home-page'>
             <div className='text-zone'>
                 <h1>
