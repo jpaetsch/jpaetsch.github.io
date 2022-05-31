@@ -1,1 +1,10 @@
-// TODO flesh out
+@use '../abstracts/colors' as *;
+
+$themes: (
+    original: (
+        test: $gold,
+    ),
+    light: (
+        test: $blue,
+    ),
+);

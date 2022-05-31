@@ -7,6 +7,7 @@ import homeBackground1 from '../../assets/images/homeBackground1.jpg'
 import homeBackground2 from '../../assets/images/homeBackground2.jpg'
 import homeBackground3 from '../../assets/images/homeBackground3.jpg'
 import homeBackground4 from '../../assets/images/homeBackground4.jpg'
+import ThemeSetter from '../ThemeSetter';
 
 
 const Home = () => {
@@ -21,6 +22,7 @@ const Home = () => {
 
     return (
         <>
+        <ThemeSetter />
         <div className='container home-page'>
             <div className='text-zone'>
                 <h1>
