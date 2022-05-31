@@ -17,8 +17,16 @@ $themes: (
 
         // Layout Options
         layout-tags: colors.$gold,
-        layout-font: 'La Belle Aurore',
-        // IN PROGRESS
+        layout-tags-font: 'La Belle Aurore',
+        layout-h1: colors.$gold,
+        layout-h1-highlight: colors.$white,
+        layout-h1-font: 'Coolvetica',
+        layout-h1-open-tag: colors.$gold,
+        layout-h1-open-tag-font: 'La Belle Aurore',
+        layout-h1-close-tag: colors.$gold,
+        layout-h1-close-tag-font: 'La Belle Aurore',
+        layout-p: colors.$white,
+        layout-p-font: sans-serif,
 
         // Home Page Options
 

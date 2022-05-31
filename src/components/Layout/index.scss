@@ -14,7 +14,7 @@
 .tags {
     @include themes.themed() {
         color: themes.get('layout-tags');
-        font-family: themes.get('layout-font');
+        font-family: themes.get('layout-tags-font');
     }
     opacity: 0.6;
     position: absolute;
@@ -58,9 +58,11 @@
     }
     
     h1 {
+        @include themes.themed() {
+            color: themes.get('layout-h1');
+            font-family: themes.get('layout-h1-font');
+        }
         font-size: 53px;
-        font-family: 'Coolvetica';
-        color: #c49b3c;
         font-weight: 400;
         margin-top: 0;
         position: relative;
@@ -68,8 +70,11 @@
         left: 10px;
 
         &::before {
+            @include themes.themed() {
+                color: themes.get('layout-open-h1-tag');
+                font-family: themes.get('layout-h1-open-tag-font');
+            }
             content: '<h1>';
-            font-family: 'La Belle Aurore';
             font-size: 18px;
             position: absolute;
             margin-top: -10px;
@@ -79,8 +84,11 @@
         }
 
         &::after {
+            @include themes.themed() {
+                color: themes.get('layout-h1-close-tag');
+                font-family: themes.get('layout-h1-close-tag-font');
+            }
             content: '<h1/>';
-            font-family: 'La Belle Aurore';
             font-size: 18px;
             line-height: 18px;
             position: absolute;
@@ -93,8 +101,10 @@
 
     p {
         font-style: 13px;
-        color: #f0ead6;
-        font-family: sans-serif;
+        @include themes.themed() {
+            color: themes.get('layout-p');
+            font-family: themes.get('layout-p-font');
+        }
         font-weight: 300;
         min-width: fit-content;
         animation: pulse 1s;
@@ -114,7 +124,9 @@
     
     .text-animate-hover {
         &:hover {
-            color: #f0ead6;
+            @include themes.themed() {
+                color: themes.get('layout-h1-highlight');
+            }
         }
     }
 }
