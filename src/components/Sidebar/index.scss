@@ -6,7 +6,7 @@
         background: themes.get('sidebar-bg');
         border-right: themes.get('sidebar-border');
     }
-
+    
     width: 70px;
     height: 100%;
     position: absolute;
@@ -87,6 +87,11 @@
             }
 
             &:after {
+
+                @include themes.themed() {
+                    font-family: themes.get('sidebar-font');
+                }
+                
                 content: '';
                 font-size: 9px;
                 letter-spacing: 2px;
