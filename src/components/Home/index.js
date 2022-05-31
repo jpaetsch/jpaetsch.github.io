@@ -7,7 +7,6 @@ import homeBackground1 from '../../assets/images/homeBackground1.jpg'
 import homeBackground2 from '../../assets/images/homeBackground2.jpg'
 import homeBackground3 from '../../assets/images/homeBackground3.jpg'
 import homeBackground4 from '../../assets/images/homeBackground4.jpg'
-import ThemeSetter from '../ThemeSetter';
 
 
 const Home = () => {
@@ -25,14 +24,14 @@ const Home = () => {
         <div className='container home-page'>
             <div className='text-zone'>
                 <h1>
-                <span className={`${letterClass} _11`}>H</span>
-                <span className={`${letterClass} _12`}>e</span>
-                <span className={`${letterClass} _13`}>y,</span>
-                <br />
-                <span className={`${letterClass} _14`}>I</span>
-                <span className={`${letterClass} _15`}>'m</span>
-                <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={16} />
-                <br />
+                    <span className={`${letterClass} _11`}>H</span>
+                    <span className={`${letterClass} _12`}>e</span>
+                    <span className={`${letterClass} _13`}>y,</span>
+                    <br />
+                    <span className={`${letterClass} _14`}>I</span>
+                    <span className={`${letterClass} _15`}>'m</span>
+                    <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={16} />
+                    <br />
                 </h1>
                 <div className='word-scroller'>
                     <span>
