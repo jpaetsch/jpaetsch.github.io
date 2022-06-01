@@ -63,6 +63,7 @@
         overflow: hidden;
         width: 12em;
         animation: fadeIn 1s 3s backwards;
+        transition: 0.5s;
 
         &:hover {
             @include themes.themed() {
@@ -101,7 +102,6 @@
                 box-shadow: themes.get('home-contact-button-highlight-bottom');
                 text-shadow: themes.get('home-contact-button-highlight-1'), themes.get('home-contact-button-highlight-2'), themes.get('home-contact-button-highlight-3'), themes.get('home-contact-button-highlight-4');
             }
-            transform: translateY(-0.5em);
         }
     }
 
@@ -257,6 +257,7 @@
         text-decoration: none;
         padding: 0.4em 0.5em;
         float: center;
+        transition: 0.5s;
 
         &:hover {
             @include themes.themed() {

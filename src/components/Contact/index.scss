@@ -1,3 +1,5 @@
+@use '../../styles/themes';
+
 .contact-form {
     width: 100%;
     margin-top: 20px;
@@ -34,43 +36,73 @@
 
     input[type='text'],
     input[type='email'] {
+        @include themes.themed() {
+            color: themes.get('contact-input');
+            background: themes.get('contact-input-bg');
+        }
         width: 100%;
         border: 0;
-        background: #454955;
         height: 50px;
         font-size: 16px;
-        color: #f0ead6;
         padding: 0 20px;
         box-sizing: border-box;
     }
 
     textarea {
+        @include themes.themed() {
+            color: themes.get('contact-input');
+            background: themes.get('contact-input-bg');
+        }
         width: 100%;
         border: 0;
-        background: #454955;
         height: 50px;
         font-size: 16px;
-        color: #f0ead6;
         padding: 20px;
         min-height: 150px;
         box-sizing: border-box;
     }
 
     .flat-button {
-        color: #c49b3c;
-        background: #0d0a0b;
-        font: 11px;
+        @include themes.themed() {
+            color: themes.get('contact-btn');
+            background: themes.get('contact-btn-bg');
+            border: themes.get('contact-btn-border');
+        }
+        font-size: 11px;
         letter-spacing: 3px;
         text-decoration: none;
         padding: 8px 10px;
-        border: 1px solid #c49b3c;
         float: right;
         border-radius: 5px;
+        white-space: nowrap;
+        transition: 0.5s;
+        margin-bottom: 20px;
 
-        &:hover {
-            color: #0d0a0b;
-            background: #c49b3c;
-            cursor: pointer;
+        &:enabled {
+            &:hover {
+                @include themes.themed() {
+                    box-shadow: themes.get('contact-btn-highlight-bottom');
+                    text-shadow: themes.get('contact-btn-highlight-1'), themes.get('contact-btn-highlight-2'), themes.get('contact-btn-highlight-3'), themes.get('contact-btn-highlight-4');
+                }
+                cursor: pointer;
+            } 
         }
+
+        &:disabled {
+            @include themes.themed() {
+                border: themes.get('contact-btn-disabled-border');
+                text-shadow: themes.get('contact-btn-disabled-1'), themes.get('contact-btn-disabled-2'), themes.get('contact-btn-disabled-3'), themes.get('contact-btn-disabled-4');
+            }
+            animation: spinner 1.5s linear infinite;
+        }
+    }
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }

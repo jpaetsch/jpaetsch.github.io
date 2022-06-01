@@ -1,3 +1,5 @@
+@use '../../styles/themes';
+
 .text-animate {
     display: inline-block;
     opacity: 0;
@@ -13,7 +15,9 @@
 
     &:hover {
         animation: jello 1s;
-        color: #c49b3c;
+        @include themes.themed() {
+            color: themes.get('animated-letters-highlight');
+        }
     }
 }
 

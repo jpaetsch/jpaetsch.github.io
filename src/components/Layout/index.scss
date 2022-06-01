@@ -4,6 +4,11 @@
     width: 100%;
     height: 100%;
     position: absolute;
+
+    @include themes.themed() {
+        color: themes.get('page');
+        background: themes.get('page-bg');
+    }
 }
 
 .top-tags {

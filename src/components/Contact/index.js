@@ -1,7 +1,6 @@
 import Loader from 'react-loaders';
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
-import SendEmailLoader from './SendEmailLoader';
 import { useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
@@ -59,7 +58,7 @@ const Contact = () => {
                         any other comments or questions!
                     </p>
                     <div className='contact-form'>
-                        <form ref={refContactForm} onSubmit={sendEmail}>
+                        <form ref={refContactForm} onSubmit={sendEmail}> 
                             <ul>
                                 <li className='half'>
                                     <input type='text' name='name' placeholder='Name' required />
@@ -73,11 +72,9 @@ const Contact = () => {
                                 <li>
                                     <textarea name='message' placeholder='Message' required></textarea>
                                 </li>
-                                {isLoading ? <SendEmailLoader /> : 
-                                    <li>
-                                        <input type='submit' className='flat-button' value='SEND' disabled={isLoading} />
-                                    </li>
-                                }
+                                <li>
+                                    <input type='submit' className='flat-button' value='SEND' disabled={isLoading} />
+                                </li>
                             </ul>
                         </form>
                     </div>

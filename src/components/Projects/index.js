@@ -10,8 +10,23 @@ const Projects = () => {
                 <p> test </p>
             </div>
         </div>
-        {/* CONTINUE WITH HEXAGON PROJECT CONTENT HERE */}
-        {/* <div className=''></div> */}
+        <div className='hex-projects-container'>
+            <div className='hex'>
+                <div className='shape'>
+
+                </div>
+            </div>
+            <div className='hex'>
+                <div className='shape'>
+                    
+                </div>
+            </div>
+            <div className='hex'>
+                <div className='shape'>
+                    
+                </div>
+            </div>
+        </div>
         <Loader type='line-scale' />
         </>
     );

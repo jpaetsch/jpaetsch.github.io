@@ -3,11 +3,37 @@
 
 $themes: (
 
-// The OG Colour Scheme
+    // The OG Colour Scheme
     original: (
-        // Index Options
-        index: colors.$dark-grey,
-        index-bg: colors.$dark,
+        
+        // About Page Options
+        about-cube-border: 1px solid colors.$light-grey,
+        about-cube-background:  colors.$light-grey-transparent,
+        about-cube-glow: 0 0 40px 0px colors.$light-yellow,
+
+        // Animated Letters Options
+        animated-letters-highlight: colors.$gold,
+
+        // Contact Page Options
+        contact-input-bg: colors.$medium-grey,
+        contact-input: colors.$white,
+        contact-btn: colors.$gold,
+        contact-btn-bg: colors.$dark,
+        contact-btn-border: 2px solid colors.$gold,
+        contact-btn-highlight-bottom: 0 0.8em 0.8em -0.4em colors.$blue,
+        contact-btn-highlight-1: 0.1em 0.1em 0.2em colors.$blue,
+        contact-btn-highlight-2: 0.1em -0.1em 0.2em colors.$blue,
+        contact-btn-highlight-3: -0.1em 0.1em 0.2em colors.$blue,
+        contact-btn-highlight-4: -0.1em -0.1em 0.2em colors.$blue,
+        contact-btn-disabled-border: none,
+        contact-btn-disabled-1: 0.2em 0.2em 1em colors.$light-yellow,
+        contact-btn-disabled-2: 0.2em -0.2em 1em colors.$light-yellow,
+        contact-btn-disabled-3: -0.2em 0.2em 1em colors.$light-yellow,
+        contact-btn-disabled-4: -0.2em -0.2em 1em colors.$light-yellow,
+
+        // Base App Options
+        page: colors.$dark-grey,
+        page-bg: colors.$dark,
 
         // Sidebar Options
         sidebar-bg: colors.$dark-grey,
@@ -78,14 +104,9 @@ $themes: (
         home-timeline-button-highlight-3: -0.1em 0.1em 0.2em colors.$blue,
         home-timeline-button-highlight-4: -0.1em -0.1em 0.2em colors.$blue,
 
-        // About Page Options
-        about-cube-border: 1px solid colors.$light-grey,
-        about-cube-background:  colors.$light-grey-transparent,
-        about-cube-glow: 0 0 40px 0px colors.$light-yellow,
 
-
-        // Contact Page Options
     ),
+    
     // Shiny Colour Scheme
     bright: (
         
@@ -94,18 +115,18 @@ $themes: (
 
 @mixin themed() {
     @each $theme, $map in $themes {
-      .theme--#{$theme} & {
-        $theme-map: () !global;
-        @each $key, $submap in $map {
-          $value: map-get(map-get($themes, $theme), '#{$key}');
-          $theme-map: map-merge($theme-map, ($key: $value)) !global;
+        .theme--#{$theme} & {
+            $theme-map: () !global;
+            @each $key, $submap in $map {
+              $value: map-get(map-get($themes, $theme), '#{$key}');
+              $theme-map: map-merge($theme-map, ($key: $value)) !global;
+            }
+            @content;
+            $theme-map: null !global;
         }
-        @content;
-        $theme-map: null !global;
-      }
     }
-  }
+}
   
-  @function get($key) {
+@function get($key) {
     @return map-get($theme-map, $key);
-  }
+}
