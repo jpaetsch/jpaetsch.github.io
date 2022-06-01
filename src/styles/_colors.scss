@@ -1,8 +1,10 @@
-$dark: hsl(340, 13%, 5%);
-$dark-opacity: hsla(340, 13%, 5%, 0%);
-$dark-grey: hsl(0, 0%, 12%);
-$medium-grey: hsl(225, 10%, 30%);
-$light-grey: hsl(0, 0%, 62%);
-$white: hsl(46, 46%, 89%);
-$gold: hsl(42, 54%, 50%);
-$blue: hsl(227, 100%, 56%);
+$dark: hsla(340, 13%, 5%, 100%);
+$dark-transparent: hsla(340, 13%, 5%, 0%);
+$dark-grey: hsla(0, 0%, 12%, 100%);
+$medium-grey: hsla(225, 10%, 30%, 100%);
+$light-grey: hsla(0, 0%, 62%, 100%);
+$light-grey-transparent: hsla(0, 0%, 62%, 40%);
+$light-yellow: hsla(60, 100%, 94%, 100%);
+$white: hsla(46, 46%, 89%, 100%);
+$gold: hsla(42, 54%, 50%, 100%);
+$blue: hsla(227, 100%, 56%, 100%);

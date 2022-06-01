@@ -5,6 +5,10 @@ $themes: (
 
 // The OG Colour Scheme
     original: (
+        // Index Options
+        index: colors.$dark-grey,
+        index-bg: colors.$dark,
+
         // Sidebar Options
         sidebar-bg: colors.$dark-grey,
         sidebar-unselected-major-icon: colors.$medium-grey,
@@ -56,7 +60,7 @@ $themes: (
         home-timeline-bg: colors.$dark,
         home-timeline-border: 2px solid colors.$medium-grey,
         home-timeline-bg-filter: transparentize(colors.$dark, 0.4),
-        home-timeline-bg-gradient: linear-gradient(to bottom, colors.$dark-opacity 0%,colors.$dark 75%),
+        home-timeline-bg-gradient: linear-gradient(to bottom, colors.$dark-transparent 0%, colors.$dark 75%),
         home-timeline-content-h1: colors.$blue,
         home-timeline-content-h1-font: sans-serif,
         home-timeline-content-p: colors.$white,
@@ -74,15 +78,11 @@ $themes: (
         home-timeline-button-highlight-3: -0.1em 0.1em 0.2em colors.$blue,
         home-timeline-button-highlight-4: -0.1em -0.1em 0.2em colors.$blue,
 
-
-        
-
-        
-
-
-
-
         // About Page Options
+        about-cube-border: 1px solid colors.$light-grey,
+        about-cube-background:  colors.$light-grey-transparent,
+        about-cube-glow: 0 0 40px 0px colors.$light-yellow,
+
 
         // Contact Page Options
     ),
