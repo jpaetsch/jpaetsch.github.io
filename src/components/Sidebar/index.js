@@ -1,4 +1,4 @@
-import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faHome, faUser, faFolderTree } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link, NavLink } from 'react-router-dom';
@@ -36,11 +36,6 @@ const Sidebar = () => {
                 <li>
                     <a target='_blank' rel='noreferrer' href='https://github.com/jpaetsch'>
                         <FontAwesomeIcon icon={faGithub} color='#4d4d4e' />
-                    </a>
-                </li>
-                <li>
-                    <a target='_blank' rel='noreferrer' href='https://www.instagram.com/j.paetsch/'>
-                        <FontAwesomeIcon icon={faInstagram} color='#4d4d4e' />
                     </a>
                 </li>
             </ul>
