@@ -196,7 +196,6 @@
           }
 
           font-size: 1.8rem;
-          font-weight: normal;
         }
 
         p {
@@ -204,6 +203,8 @@
             color: themes.get('home-timeline-content-p');
             font-family: themes.get('home-timeline-content-p-font');
           }
+
+          font-size: 1.2rem;
         }
       }
       
