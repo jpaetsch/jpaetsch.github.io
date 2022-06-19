@@ -9,7 +9,7 @@ const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
     const [isLoading, setIsLoading] = useState(false);
 
-    const strContactMe = 'Contact me'.split('');
+    const strContactMe = 'Contact Me'.split('');
 
     const refContactForm = useRef();
 

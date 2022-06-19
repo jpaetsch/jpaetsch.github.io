@@ -46,7 +46,7 @@ const Home = () => {
             <div className='timeline'>
                 <div className='tl-item'>
                     <div className='tl-bg' style={{backgroundImage: `url(${homeBackground4})`}}></div>
-                    <div className='tl-year'>
+                    <div className='tl-title'>
                         <p>Work</p>
                     </div>
                     <div className='tl-content'>
@@ -58,7 +58,7 @@ const Home = () => {
                 </div>
                 <div className='tl-item'>
                     <div className='tl-bg' style={{backgroundImage: `url(${homeBackground3})`}}></div>
-                    <div className='tl-year'>
+                    <div className='tl-title'>
                         <p>Projects</p>
                     </div>
                     <div className='tl-content'>
@@ -70,7 +70,7 @@ const Home = () => {
                 </div>
                 <div className='tl-item'>
                     <div className='tl-bg' style={{backgroundImage: `url(${homeBackground2})`}}></div>
-                    <div className='tl-year'>
+                    <div className='tl-title'>
                         <p>Hobbies</p>
                     </div>
                     <div className='tl-content'>
@@ -82,7 +82,7 @@ const Home = () => {
                 </div>
                 <div className='tl-item'>
                     <div className='tl-bg' style={{backgroundImage: `url(${homeBackground1})`}}></div>
-                    <div className='tl-year'>
+                    <div className='tl-title'>
                         <p>School</p>
                     </div>
                     <div className='tl-content'>
