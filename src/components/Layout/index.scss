@@ -105,12 +105,11 @@
     }
 
     p {
-        font-style: 13px;
+        font-size: 13px;
         @include themes.themed() {
             color: themes.get('layout-p');
             font-family: themes.get('layout-p-font');
         }
-        font-weight: 300;
         min-width: fit-content;
         animation: pulse 1s;
 
