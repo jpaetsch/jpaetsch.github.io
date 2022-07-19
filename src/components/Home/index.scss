@@ -64,12 +64,6 @@
         animation: fadeIn 1s 3s backwards;
         transition: 0.5s;
 
-        &:hover {
-            @include themes.themed() {
-                text-shadow: themes.get('home-scroller-highlight-1'), themes.get('home-scroller-highlight-2'), themes.get('home-scroller-highlight-3'), themes.get('home-scroller-highlight-4');
-            }
-        }
-
         span {
             position: absolute;
             top: 0;
