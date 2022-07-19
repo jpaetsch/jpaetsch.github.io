@@ -169,6 +169,11 @@
           .tl-bg {
             filter: grayscale(0);
           }
+
+          .tl-title {
+            opacity: 0.25;
+            transition: opacity 1s ease;
+          }
         }
       }
       
