@@ -1,10 +1,10 @@
 import Loader from 'react-loaders';
 import './index.scss';
-import AnimatedLetters from '../AnimatedLetters';
+import AnimatedLetters from '../../AnimatedLetters';
 import { useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
-const Contact = () => {
+const ContactPage = () => {
 
     const [letterClass, setLetterClass] = useState('text-animate');
     const [isLoading, setIsLoading] = useState(false);
@@ -85,4 +85,4 @@ const Contact = () => {
     );
 };
 
-export default Contact;
+export default ContactPage;

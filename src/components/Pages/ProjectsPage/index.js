@@ -1,7 +1,7 @@
 import './index.scss';
 import Loader from 'react-loaders';
 
-const Projects = () => {
+const ProjectsPage = () => {
 
     return (
         <>
@@ -34,4 +34,4 @@ const Projects = () => {
     );
 };
 
-export default Projects;
+export default ProjectsPage;

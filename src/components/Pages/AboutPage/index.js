@@ -1,11 +1,11 @@
 import './index.scss';
-import AnimatedLetters from '../AnimatedLetters';
+import AnimatedLetters from '../../AnimatedLetters';
 import { useEffect, useState } from 'react';
 import { faAndroid, faAws, faCanadianMapleLeaf, faDocker, faGithubSquare, faReact } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Loader from 'react-loaders';
 
-const About = () => {
+const AboutPage = () => {
 
     const [letterClass, setLetterClass] = useState('text-animate');
 
@@ -68,4 +68,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default AboutPage;

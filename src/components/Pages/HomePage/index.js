@@ -1,16 +1,16 @@
 import { useState, useEffect } from 'react';
 import Loader from 'react-loaders';
 import { Link } from 'react-router-dom';
-import AnimatedLetters from '../AnimatedLetters';
+import AnimatedLetters from '../../AnimatedLetters';
 import './index.scss';
-import homeBackground1 from '../../assets/images/homeBackground1.jpg';
-import homeBackground2 from '../../assets/images/homeBackground2.jpg';
-import homeBackground3 from '../../assets/images/homeBackground3.jpg';
-import homeBackground4 from '../../assets/images/homeBackground4.jpg';
-import Resume from '../../assets/files/Resume.pdf';
+import homeBackground1 from '../../../assets/images/homeBackground1.jpg';
+import homeBackground2 from '../../../assets/images/homeBackground2.jpg';
+import homeBackground3 from '../../../assets/images/homeBackground3.jpg';
+import homeBackground4 from '../../../assets/images/homeBackground4.jpg';
+import Resume from '../../../assets/files/Resume.pdf';
 
 
-const Home = () => {
+const HomePage = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
     const nameArray = ' Jacob!'.split('');
 
@@ -99,4 +99,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default HomePage;
