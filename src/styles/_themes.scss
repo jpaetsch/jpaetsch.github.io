@@ -49,15 +49,9 @@ $themes: (
         sidebar-font: 'Source Sans Pro',
 
         // Layout Options
-        layout-tags: colors.$gold,
-        layout-tags-font: 'La Belle Aurore',
         layout-h1: colors.$gold,
         layout-h1-highlight: colors.$white,
         layout-h1-font: 'Rosarivo',
-        layout-h1-open-tag: colors.$gold,
-        layout-h1-open-tag-font: 'La Belle Aurore',
-        layout-h1-close-tag: colors.$gold,
-        layout-h1-close-tag-font: 'La Belle Aurore',
         layout-p: colors.$white,
         layout-p-font: 'Source Sans Pro',
 
@@ -65,10 +59,6 @@ $themes: (
         home-h1: colors.$white,
         home-h1-highlight: colors.$gold,
         home-h1-font: 'Rosarivo',
-        home-h1-open-tag: colors.$gold,
-        home-h1-open-tag-font: 'La Belle Aurore',
-        home-h1-close-tag: colors.$gold,
-        home-h1-close-tag-font: 'La Belle Aurore',
         home-scroller: colors.$light-grey,
         home-scroller-border: 1px solid colors.$light-grey,
         home-scroller-font: 'Source Sans Pro',
@@ -100,7 +90,6 @@ $themes: (
         home-timeline-button-highlight-2: 0.1em -0.1em 0.2em colors.$blue,
         home-timeline-button-highlight-3: -0.1em 0.1em 0.2em colors.$blue,
         home-timeline-button-highlight-4: -0.1em -0.1em 0.2em colors.$blue,
-
 
     ),
     
