@@ -7,7 +7,9 @@ const Projects = () => {
         <>
         <div className='container projects-page'>
             <div className='text-zone'>
-                <p> test </p>
+                <p>I have big plans for this page! However, at the moment it is under construction.</p>
+                <br />
+                <p>Please check back later, I promise that content is coming shortly!</p> 
             </div>
         </div>
         <div className='hex-projects-container'>

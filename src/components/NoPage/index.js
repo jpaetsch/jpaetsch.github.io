@@ -2,7 +2,7 @@ import './index.scss';
 
 const NoPage = () => {
     return (
-    <h1 className='temporary'>Page Doesn't Exist</h1>
+    <h1 className='temporary'>Sorry, but the page you're looking for doesn't seem to exist...</h1>
     );
 };
 
