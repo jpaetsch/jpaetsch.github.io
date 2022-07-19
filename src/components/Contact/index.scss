@@ -41,7 +41,6 @@
             background: themes.get('contact-input-bg');
         }
         width: 100%;
-        border: 0;
         height: 50px;
         font-size: 16px;
         padding: 0 20px;
@@ -67,13 +66,14 @@
             color: themes.get('contact-btn');
             background: themes.get('contact-btn-bg');
             border: themes.get('contact-btn-border');
+            font-family: themes.get('contact-btn-font');
         }
-        font-size: 11px;
+        font-size: 16px;
         letter-spacing: 3px;
         text-decoration: none;
         padding: 8px 10px;
         float: right;
-        border-radius: 5px;
+        border-radius: 4px;
         white-space: nowrap;
         transition: 0.5s;
         margin-bottom: 20px;
