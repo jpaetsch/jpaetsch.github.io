@@ -29,7 +29,7 @@
                     border: themes.get('sidebar-border');
                 }
 
-                border-radius: 6px;
+                border-radius: 1.8rem 1.8rem 0 0;
 
                 &:hover {
                     @include themes.themed() {
