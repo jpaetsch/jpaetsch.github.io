@@ -1,25 +1,17 @@
 import './index.scss';
 import Loader from 'react-loaders';
 import useViewPort from '../../Hooks/useViewport';
-// import ViewportContext from '../../Contexts/ViewportContext';
 import React from 'react';
 
 // BEGIN TEST RESPONSIVE
 const SmallComment = () => <p>Screen is small!</p>;
 const BigComment = () => <p>Screen is big!</p>
-
-// const useViewport = () => {
-//     const {width, height} = React.useContext(ViewportContext);
-//     return {width, height};
-// };
-
 // END TEST RESPONSIVE
 
 const ProjectsPage = () => {
     
     // BEGIN TEST RESPONSIVE
     const { width } = useViewPort();
-    console.log(width);
     const breakpoint = 600;
     // END TEST RESPONSIVE
     
