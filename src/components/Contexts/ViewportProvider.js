@@ -12,10 +12,8 @@ const ViewportProvider = ({ children }) => {
     };
 
     useEffect(() => {
-        window.addEventListener("windowResize", handleWindowResize);
-        return () => { 
-            window.removeEventListener("windowResize", handleWindowResize)
-        };
+        window.addEventListener("resize", handleWindowResize);
+        return () => window.removeEventListener("resize", handleWindowResize);
     }, []);
 
     return (
@@ -23,7 +21,6 @@ const ViewportProvider = ({ children }) => {
             { children }
         </ViewportContext.Provider>
     );
-
 };
 
 export default ViewportProvider;

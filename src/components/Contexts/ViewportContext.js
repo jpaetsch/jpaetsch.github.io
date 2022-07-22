@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const initialViewportState = {
+const initialViewportState = {
     width: window.innerWidth,
     height: window.innerHeight,
     setWidth: () => null,
