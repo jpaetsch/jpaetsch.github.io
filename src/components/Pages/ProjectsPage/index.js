@@ -3,31 +3,22 @@ import Loader from 'react-loaders';
 import useViewPort from '../../Hooks/useViewport';
 import React from 'react';
 import SidebarFixed from '../../SidebarFixed';
+import SidebarHamburger from '../../SidebarHamburger';
 
-// BEGIN TEST RESPONSIVE
-const SmallComment = () => <p>Screen is small!</p>;
-const BigComment = () => <p>Screen is big!</p>
-// END TEST RESPONSIVE
 
 const ProjectsPage = () => {
     
-    // BEGIN TEST RESPONSIVE
     const { width } = useViewPort();
     const breakpoint = 600;
-    // END TEST RESPONSIVE
     
     return (
         <>
-        <SidebarFixed />
+        {width < breakpoint ? <SidebarHamburger /> : <SidebarFixed />}
         <div className='container projects-page'>
             <div className='text-zone'>
                 <p>I have big plans for this page! However, at the moment it is under construction.</p>
                 <br />
                 <p>Please check back later, I promise that content is coming shortly!</p>
-                {/* BEGIN TEST RESPONSIVE */}
-                <br />
-                {width < breakpoint ? <SmallComment /> : <BigComment />}
-                {/* END TEST RESPONSIVE */}
             </div>
         </div>
         <div className='hex-projects-container'>

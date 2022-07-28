@@ -4,12 +4,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link, NavLink } from 'react-router-dom';
 import ProfilePic from '../../assets/images/profile-pic.jpg';
 import Signature from '../../assets/images/name-signature.png';
-import './index.scss';
 
-const SidebarFixed = () => {
+
+const SidebarHamburger = () => {
     return (
-        <div className='nav-bar-fixed'>
-            <Link className='top-widget' to='/'>
+        <div className='nav-bar-hamburger'>
+            <input id='hamburger-toggle' type='checkbox' />
+            <label class='menu-btn' for='hamburger-toggle'>
+                <span></span>
+            </label>
+            {/* <Link className='top-widget' to='/'>
                 <img className='upper-pic' src={ProfilePic} alt='Jacob' />
                 <img className='lower-name' src={Signature} alt='Paetsch' />
             </Link>
@@ -38,9 +42,9 @@ const SidebarFixed = () => {
                         <FontAwesomeIcon icon={faGithub} color='#4d4d4e' />
                     </a>
                 </li>
-            </ul>
+            </ul> */}
         </div>
     );
 };
 
-export default SidebarFixed;
+export default SidebarHamburger;
