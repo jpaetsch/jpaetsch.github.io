@@ -6,7 +6,7 @@ import ProfilePic from '../../assets/images/profile-pic.jpg';
 import Signature from '../../assets/images/name-signature.png';
 import './index.scss';
 
-const Sidebar = () => {
+const SidebarFixed = () => {
     return (
         <div className='nav-bar'>
             <Link className='top-widget' to='/'>
@@ -43,4 +43,4 @@ const Sidebar = () => {
     );
 };
 
-export default Sidebar;
+export default SidebarFixed;

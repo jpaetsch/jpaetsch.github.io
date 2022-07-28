@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Loader from 'react-loaders';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../../AnimatedLetters';
-import Sidebar from '../../Sidebar';
+import SidebarFixed from '../../SidebarFixed';
 import './index.scss';
 import homeBackground1 from '../../../assets/images/homeBackground1.jpg';
 import homeBackground2 from '../../../assets/images/homeBackground2.jpg';
@@ -23,7 +23,7 @@ const HomePage = () => {
 
     return (
         <>
-        <Sidebar />
+        <SidebarFixed />
         <div className='container home-page'>
             <div className='text-zone'>
                 <h1>

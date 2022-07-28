@@ -2,7 +2,7 @@ import './index.scss';
 import Loader from 'react-loaders';
 import useViewPort from '../../Hooks/useViewport';
 import React from 'react';
-import Sidebar from '../../Sidebar';
+import SidebarFixed from '../../SidebarFixed';
 
 // BEGIN TEST RESPONSIVE
 const SmallComment = () => <p>Screen is small!</p>;
@@ -18,7 +18,7 @@ const ProjectsPage = () => {
     
     return (
         <>
-        <Sidebar />
+        <SidebarFixed />
         <div className='container projects-page'>
             <div className='text-zone'>
                 <p>I have big plans for this page! However, at the moment it is under construction.</p>

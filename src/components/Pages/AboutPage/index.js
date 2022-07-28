@@ -1,6 +1,6 @@
 import './index.scss';
 import AnimatedLetters from '../../AnimatedLetters';
-import Sidebar from '../../Sidebar';
+import SidebarFixed from '../../SidebarFixed';
 import { useEffect, useState } from 'react';
 import { faAndroid, faAws, faCanadianMapleLeaf, faDocker, faGithubSquare, faReact } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -20,7 +20,7 @@ const AboutPage = () => {
 
     return (
         <>
-        <Sidebar />
+        <SidebarFixed />
         <div className='container about-page'>
             <div className='text-zone'>
                 <h1>
