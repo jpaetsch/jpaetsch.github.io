@@ -1,12 +1,10 @@
 import { Outlet } from 'react-router-dom';
-import SidebarFixed from '../SidebarFixed';
 import './index.scss';
 
 const Layout = () => {
     return (
         <div className='App'>
-            <SidebarFixed />
-            <div className='page'>
+            <div className='default-page'>
                 <Outlet />
             </div>
         </div>
