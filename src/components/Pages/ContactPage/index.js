@@ -1,7 +1,7 @@
 import Loader from 'react-loaders';
 import './index.scss';
 import AnimatedLetters from '../../AnimatedLetters';
-import SidebarFixed from '../../SidebarFixed';
+import Sidebar from '../../Sidebar';
 import { useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
@@ -48,7 +48,7 @@ const ContactPage = () => {
 
     return (
         <>
-            <SidebarFixed />
+            <Sidebar />
             <div className='container contact-page'>
                 <div className='text-zone'>
                     <h1>
