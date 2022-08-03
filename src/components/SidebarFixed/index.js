@@ -1,9 +1,10 @@
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faHome, faUser, faFolderTree } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faHome, faUser, faFolderTree, faFileArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link, NavLink } from 'react-router-dom';
 import ProfilePic from '../../assets/images/profile-pic.jpg';
 import Signature from '../../assets/images/name-signature.png';
+import Resume from '../../assets/files/Resume.pdf';
 import './index.scss';
 
 const SidebarFixed = () => {
@@ -36,6 +37,11 @@ const SidebarFixed = () => {
                 <li>
                     <a target='_blank' rel='noreferrer' href='https://github.com/jpaetsch'>
                         <FontAwesomeIcon icon={faGithub} color='#4d4d4e' />
+                    </a>
+                </li>
+                <li>
+                    <a target='_blank' rel='noreferrer' href={Resume} className='contact-button' download>
+                        <FontAwesomeIcon icon={faFileArrowDown} color='#4d4d4e' />
                     </a>
                 </li>
             </ul>
