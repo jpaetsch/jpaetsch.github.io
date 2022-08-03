@@ -4,15 +4,25 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link, NavLink } from 'react-router-dom';
 import ProfilePic from '../../assets/images/profile-pic.jpg';
 import Signature from '../../assets/images/name-signature.png';
+import './index.scss';
 
 
 const SidebarHamburger = () => {
     return (
         <div className='nav-bar-hamburger'>
-            <input id='hamburger-toggle' type='checkbox' />
-            <label class='menu-btn' for='hamburger-toggle'>
-                <span></span>
+            <input className='hamburger-toggle' id='hamburger-toggle' type='checkbox' />
+            <label className='hamburger-icon-toggle' for='hamburger-toggle'>
+                <div className='spinner diagonal-line-1'></div>
+                <div className='spinner horizontal-line'></div>
+                <div className='spinner diagonal-line-2'></div>
             </label>
+            <div className='hamburger-menu'>
+                <ul className='hamburger-menu-inner'>
+                    <li>ADD CONTENT 1</li>
+                    <li>ADD CONTENT 2</li>
+                    <li>ADD CONTENT 3</li>
+                </ul>
+            </div>
             {/* <Link className='top-widget' to='/'>
                 <img className='upper-pic' src={ProfilePic} alt='Jacob' />
                 <img className='lower-name' src={Signature} alt='Paetsch' />

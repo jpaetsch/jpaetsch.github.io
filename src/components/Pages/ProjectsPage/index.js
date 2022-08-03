@@ -13,7 +13,8 @@ const ProjectsPage = () => {
     
     return (
         <>
-        {width < breakpoint ? <SidebarHamburger /> : <SidebarFixed />}
+        {/* {width < breakpoint ? <SidebarHamburger /> : <SidebarFixed />} */}
+        <SidebarHamburger />
         <div className='container projects-page'>
             <div className='text-zone'>
                 <p>I have big plans for this page! However, at the moment it is under construction.</p>
