@@ -8,7 +8,6 @@ import homeBackground1 from '../../../assets/images/homeBackground1.jpg';
 import homeBackground2 from '../../../assets/images/homeBackground2.jpg';
 import homeBackground3 from '../../../assets/images/homeBackground3.jpg';
 import homeBackground4 from '../../../assets/images/homeBackground4.jpg';
-import Resume from '../../../assets/files/Resume.pdf';
 
 
 const HomePage = () => {
@@ -45,7 +44,6 @@ const HomePage = () => {
                     </span>
                 </div>
                 <Link to='/contact' className='contact-button'>CONTACT ME</Link>
-                <a href={Resume} target='_blank' rel='noreferrer' className='contact-button' download>DOWNLOAD RESUME</a>
             </div>
             <div className='timeline'>
                 <div className='tl-item'>
