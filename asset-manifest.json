@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6ae8f110.css",
+    "main.js": "/static/js/main.63fc28ad.js",
+    "static/js/787.b60e846d.chunk.js": "/static/js/787.b60e846d.chunk.js",
+    "static/media/homeBackground3.jpg": "/static/media/homeBackground3.b38ad1341316c98d8e20.jpg",
+    "static/media/homeBackground2.jpg": "/static/media/homeBackground2.a73ea5af77b5074ba795.jpg",
+    "static/media/homeBackground4.jpg": "/static/media/homeBackground4.c4dd89e464c2e0966683.jpg",
+    "static/media/Resume.pdf": "/static/media/Resume.4b312d4aff47ddf478e1.pdf",
+    "static/media/profile-pic.jpg": "/static/media/profile-pic.20169dc76c12dd8f54ea.jpg",
+    "static/media/homeBackground1.jpg": "/static/media/homeBackground1.a86093725acbe3235a80.jpg",
+    "static/media/SourceSansPro-Regular.ttf": "/static/media/SourceSansPro-Regular.df87f53caf449a3b7572.ttf",
+    "static/media/PermanentMarker-Regular.ttf": "/static/media/PermanentMarker-Regular.109a10dca0508e41aa12.ttf",
+    "static/media/Rosarivo-Regular.ttf": "/static/media/Rosarivo-Regular.7a14be5d19b23a251d6c.ttf",
+    "static/media/name-signature.png": "/static/media/name-signature.66079fd7e613500c9022.png",
+    "index.html": "/index.html",
+    "main.6ae8f110.css.map": "/static/css/main.6ae8f110.css.map",
+    "main.63fc28ad.js.map": "/static/js/main.63fc28ad.js.map",
+    "787.b60e846d.chunk.js.map": "/static/js/787.b60e846d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ae8f110.css",
+    "static/js/main.63fc28ad.js"
+  ]
+}
