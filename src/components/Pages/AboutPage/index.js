@@ -1,6 +1,8 @@
 import './index.scss';
 import AnimatedLetters from '../../AnimatedLetters';
 import SidebarFixed from '../../SidebarFixed';
+import SidebarHamburger from '../../SidebarHamburger';
+import useViewPort from '../../Hooks/useViewPort';
 import { useEffect, useState } from 'react';
 import { faAndroid, faAws, faCanadianMapleLeaf, faDocker, faGithubSquare, faReact } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,8 +11,10 @@ import Loader from 'react-loaders';
 const AboutPage = () => {
 
     const [letterClass, setLetterClass] = useState('text-animate');
-
     const strAboutMe = 'About Me'.split('');
+
+    const { width } = useViewPort();
+    const breakpoint = 800;
 
     useEffect(() => {
         setTimeout(() => {
@@ -20,7 +24,7 @@ const AboutPage = () => {
 
     return (
         <>
-        <SidebarFixed />
+        {width < breakpoint ? <SidebarHamburger /> : <SidebarFixed />}
         <div className='container about-page'>
             <div className='text-zone'>
                 <h1>
