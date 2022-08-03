@@ -21,16 +21,16 @@ const SidebarHamburger = () => {
                 <img className='lower-name' src={Signature} alt='Paetsch' />
                 <nav>
                     <NavLink exact='true' activeclassname='active' to='/'>
-                        <FontAwesomeIcon icon={faHome} color='#4d4d4e' />
+                        <FontAwesomeIcon icon={faHome} color='#4d4d4e'/>&nbsp;&nbsp;&nbsp;&nbsp;HOME
                     </NavLink>
                     <NavLink exact='true' activeclassname='active' className='about-link' to='/about'>
-                        <FontAwesomeIcon icon={faUser} color='#4d4d4e' />
+                        <FontAwesomeIcon icon={faUser} color='#4d4d4e' />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ABOUT
                     </NavLink>
                     <NavLink exact='true' activeclassname='active' className='projects-link' to='/projects'>
-                        <FontAwesomeIcon icon={faFolderTree} color='#4d4d4e' />
+                        <FontAwesomeIcon icon={faFolderTree} color='#4d4d4e' />&nbsp;&nbsp;&nbsp;&nbsp;PROJECTS
                     </NavLink>
                     <NavLink exact='true' activeclassname='active' className='contact-link' to='/contact'>
-                        <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e' />
+                        <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e' />&nbsp;&nbsp;&nbsp;&nbsp;CONTACT
                     </NavLink>
                 </nav>
             </div>

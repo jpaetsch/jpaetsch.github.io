@@ -36,7 +36,63 @@
 
             &.lower-name {
                 width: 100px;
-                margin-bottom: 40px;
+            }
+        }
+
+        nav {
+            display: block;
+            text-align: left;
+            position: absolute;
+            height: auto;
+            margin-left: 50px;
+            margin-top: 20px;
+            width: 250px;
+    
+            a {
+                @include themes.themed() {
+                    font-family: themes.get('sidebar-font');
+                    color: themes.get('sidebar-unselected-major-icon');
+                }
+
+                font-size: 22px;
+                letter-spacing: 2px;
+                display: block;
+                line-height: 51px;
+                height: 51px;
+                position: relative;
+                text-decoration: none;
+                transition: all 0.3s ease-out;
+
+    
+                svg {
+                    transition: all 0.3s ease-out;
+                    @include themes.themed() {
+                        color: themes.get('sidebar-unselected-major-icon');
+                    }
+                }
+    
+                &:hover {
+                    opacity: 0.4;
+                    svg {
+                        @include themes.themed() {
+                            color: themes.get('sidebar-selected-major-icon');
+                        }
+                    }
+                    @include themes.themed() {
+                        color: themes.get('sidebar-selected-major-icon');
+                    }
+                }
+            }
+    
+            a.active {
+                svg {
+                    @include themes.themed() {
+                        color: themes.get('sidebar-selected-major-icon');
+                    }
+                }
+                @include themes.themed() {
+                    color: themes.get('sidebar-selected-major-icon');
+                }
             }
         }
 
