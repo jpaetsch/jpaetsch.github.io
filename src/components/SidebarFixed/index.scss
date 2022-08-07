@@ -28,14 +28,7 @@
                 @include themes.themed() {
                     border: themes.get('sidebar-border');
                 }
-
-                border-radius: 1.8rem 1.8rem 0 0;
-
-                &:hover {
-                    @include themes.themed() {
-                        box-shadow: themes.get('sidebar-highlight-1'), themes.get('sidebar-highlight-2');
-                    }
-                }
+                border-radius: 1.8rem 1.8rem .25rem 0.25rem;
             }
 
             &.lower-name {
