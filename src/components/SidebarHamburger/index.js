@@ -12,7 +12,7 @@ const SidebarHamburger = () => {
     return (
         <div className='nav-bar-hamburger'>
             <input className='hamburger-toggle' id='hamburger-toggle' type='checkbox' />
-            <label className='hamburger-icon-toggle' for='hamburger-toggle'>
+            <label className='hamburger-icon-toggle' htmlFor='hamburger-toggle'>
                 <div className='spinner diagonal-line-1'></div>
                 <div className='spinner horizontal-line'></div>
                 <div className='spinner diagonal-line-2'></div>
