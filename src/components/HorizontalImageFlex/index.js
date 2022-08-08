@@ -2,11 +2,15 @@ import './index.scss';
 import { Link } from 'react-router-dom';
 
 const HorizontalImageFlex = ({itemArray}) => {
+    
+    const widthPercentage = ((1 / itemArray.length) * 100).toString() + '%';
+    console.log(widthPercentage);
+    
     return (
         <div className='timeline'>
             {
             itemArray.map((aColumn, idx) => (
-                <div className='tl-item' key={idx}>
+                <div className='tl-item' key={idx} style={{width: widthPercentage}}>
                     <div className='tl-bg' style={{backgroundImage: `url(${aColumn.image})`}}></div>
                     <div className='tl-title'>
                         <p>{aColumn.title}</p>
