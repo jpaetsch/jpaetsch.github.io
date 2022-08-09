@@ -18,7 +18,7 @@ const HorizontalImageFlex = ({itemArray}) => {
                     <div className='tl-content'>
                         <h1>{aColumn.header}</h1>
                         <p>{aColumn.paragraphOne}<br/></p>
-                        <p>{aColumn.paragraphTwo}</p>
+                        <p>{aColumn.paragraphTwo}<br /></p>
                         <br />
                         {aColumn.buttonTo === "" ? null : <Link to={aColumn.buttonTo} className='sub-button'>{aColumn.buttonText}</Link>}
                     </div>

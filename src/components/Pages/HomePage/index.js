@@ -37,7 +37,7 @@ const HomePage = () => {
         <>
         {width < breakpoint ? <SidebarHamburger /> : <SidebarFixed />}
         <div className='container home-page'>
-            <div className='text-zone' style={{left: width < breakpoint ? '3%' : '10%'}}>
+            <div className='text-zone' style={{left: width < breakpoint ? '50px' : '120px'}}>
                 <h1>
                     <span className={`${letterClass} _11`}>H</span>
                     <span className={`${letterClass} _12`}>e</span>
