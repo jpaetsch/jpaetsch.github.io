@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 const HorizontalImageFlex = ({itemArray}) => {
     
     const widthPercentage = ((1 / itemArray.length) * 100).toString() + '%';
-    console.log(widthPercentage);
     
     return (
         <div className='timeline'>
