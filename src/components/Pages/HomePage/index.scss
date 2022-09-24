@@ -1,120 +1,170 @@
 @use '../../../styles/themes';
 
-.container {
-  width: 100%;
-  will-change: contents;
-  height: 100%;
-  min-height: 566px;
-  position: absolute;
-  opacity: 0;
-  margin: 0 auto;
-  z-index: 1;
-  transform-style: preserve-3d;
-  animation: fadeIn 1s forwards;
-  animation-delay: 1s;
-}
-
 .home-page {
+  position: absolute;
+  min-height: 100vh;
   top: 0;
-  // overflow: hidden;
-  .text-zone {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40%;
-    max-height: 90%;
+  left: 0;
+  display: flex;
+  margin-left: 70px;    // Modified by breakpoint
+  flex-direction: row;  // Modified by breakpoint
 
+  .text-container {
+    flex-grow: 4;
+    
     h1 {
+      padding-top: 100px;
+      padding-left: 50px;
+      font-size: 5.2rem;
+      font-weight: 400;
       @include themes.themed() {
         color: themes.get('home-h1');
         font-family: themes.get('home-h1-font');
       }
-
-      font-size: 53px;
-      margin: 0;
-      font-weight: 400;
     }
   }
 
-  .word-scroller {
-    @include themes.themed() {
-      color: themes.get('home-scroller');
-      border-top: themes.get('home-scroller-border');
-      font-family: themes.get('home-scroller-font');
-    }
-
-    font-size: 2.5rem;
-    margin-top: 0.8em;
-    letter-spacing: 3px;
-    height: 1.8em;
-    line-height: 1.6em;
-    position: relative;
-    overflow: hidden;
-    width: 11em;
-    animation: fadeIn 1s 3s backwards;
-    transition: 0.5s;
-
-    span {
-      position: absolute;
-      top: 0;
-      animation: wordSlide 12s 3.5s infinite;
-    }
-  }
-
-  .contact-button {
-
-    @include themes.themed() {
-      color: themes.get('home-contact-button');
-      border: themes.get('home-contact-button-border');
-      font-family: themes.get('home-contact-button-font')
-    }
-
-    font-size: 13px;
-    font-weight: 400;
-    letter-spacing: 3px;
-    text-decoration: none;
-    padding: 10px 18px;
-    margin-top: 50px;
-    float: left;
-    animation: lightSpeedInLeft 1s 1.8s backwards;
-    white-space: nowrap;
-    transition: 0.5s;
-
-    &:hover {
-      @include themes.themed() {
-        box-shadow: themes.get('home-contact-button-highlight-bottom');
-        text-shadow: themes.get('home-contact-button-highlight-1'), themes.get('home-contact-button-highlight-2'), themes.get('home-contact-button-highlight-3'), themes.get('home-contact-button-highlight-4');
-      }
-    }
-  }
-
-  .horizontal-image-flex-container {
-    width: 60%;
-    height: 100%;
-    position: absolute;
-    right: 0;
-
-    @include themes.themed() {
-      background-color: themes.get('home-timeline-bg');
-      border-left: themes.get('home-timeline-border');
-    }
+  .content-container {
+    flex-grow: 6;
   }
 }
 
-@keyframes wordSlide {
-  0% {
-    top: 0;
-  }
 
-  25% {
-    top: -1.6em;
-  }
 
-  50% {
-    top: -3.2em;
-  }
 
-  75% {
-    top: -4.8em;
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .container {
+//   width: 100%;
+//   will-change: contents;
+//   height: 100%;
+//   min-height: 566px;
+//   position: absolute;
+//   opacity: 0;
+//   margin: 0 auto;
+//   z-index: 1;
+//   transform-style: preserve-3d;
+//   animation: fadeIn 1s forwards;
+//   animation-delay: 1s;
+// }
+
+// .home-page {
+//   top: 0;
+//   // overflow: hidden;
+//   .text-zone {
+//     position: absolute;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     width: 40%;
+//     max-height: 90%;
+
+//     h1 {
+//       @include themes.themed() {
+//         color: themes.get('home-h1');
+//         font-family: themes.get('home-h1-font');
+//       }
+
+//       font-size: 53px;
+//       margin: 0;
+//       font-weight: 400;
+//     }
+//   }
+
+//   .word-scroller {
+//     @include themes.themed() {
+//       color: themes.get('home-scroller');
+//       border-top: themes.get('home-scroller-border');
+//       font-family: themes.get('home-scroller-font');
+//     }
+
+//     font-size: 2.5rem;
+//     margin-top: 0.8em;
+//     letter-spacing: 3px;
+//     height: 1.8em;
+//     line-height: 1.6em;
+//     position: relative;
+//     overflow: hidden;
+//     width: 11em;
+//     animation: fadeIn 1s 3s backwards;
+//     transition: 0.5s;
+
+//     span {
+//       position: absolute;
+//       top: 0;
+//       animation: wordSlide 12s 3.5s infinite;
+//     }
+//   }
+
+//   .contact-button {
+
+//     @include themes.themed() {
+//       color: themes.get('home-contact-button');
+//       border: themes.get('home-contact-button-border');
+//       font-family: themes.get('home-contact-button-font')
+//     }
+
+//     font-size: 13px;
+//     font-weight: 400;
+//     letter-spacing: 3px;
+//     text-decoration: none;
+//     padding: 10px 18px;
+//     margin-top: 50px;
+//     float: left;
+//     animation: lightSpeedInLeft 1s 1.8s backwards;
+//     white-space: nowrap;
+//     transition: 0.5s;
+
+//     &:hover {
+//       @include themes.themed() {
+//         box-shadow: themes.get('home-contact-button-highlight-bottom');
+//         text-shadow: themes.get('home-contact-button-highlight-1'), themes.get('home-contact-button-highlight-2'), themes.get('home-contact-button-highlight-3'), themes.get('home-contact-button-highlight-4');
+//       }
+//     }
+//   }
+
+//   .horizontal-image-flex-container {
+//     width: 60%;
+//     height: 100%;
+//     position: absolute;
+//     right: 0;
+
+//     @include themes.themed() {
+//       background-color: themes.get('home-timeline-bg');
+//       border-left: themes.get('home-timeline-border');
+//     }
+//   }
+// }
+
+// @keyframes wordSlide {
+//   0% {
+//     top: 0;
+//   }
+
+//   25% {
+//     top: -1.6em;
+//   }
+
+//   50% {
+//     top: -3.2em;
+//   }
+
+//   75% {
+//     top: -4.8em;
+//   }
+// }

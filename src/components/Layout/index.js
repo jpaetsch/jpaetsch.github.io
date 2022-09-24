@@ -4,7 +4,7 @@ import './index.scss';
 const Layout = () => {
     return (
         <div className='App'>
-            <div className='default-page'>
+            <div className='default-layout'>
                 <Outlet />
             </div>
         </div>
