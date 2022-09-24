@@ -26,6 +26,7 @@ const HomePage = () => {
 
     const { width } = useViewPort();
     const breakpoint = 800;
+    const breakpointTwo = 1060;
 
     useEffect(() => {
         setTimeout(() => {
@@ -35,8 +36,9 @@ const HomePage = () => {
 
     return (
         <>
+        <div className='page-section'>
         {width < breakpoint ? <SidebarHamburger /> : <SidebarFixed />}
-        <div className='container home-page'>
+        <div className='container home-page' style={{overflow: width < breakpointTwo ? 'visible' : 'hidden'}}>
             <div className='text-zone' style={{left: width < breakpoint ? '50px' : '120px'}}>
                 <h1>
                     <span className={`${letterClass} _11`}>H</span>
@@ -59,6 +61,7 @@ const HomePage = () => {
                 <Link to='/contact' className='contact-button'>CONTACT ME</Link>
             </div>
             <div className='horizontal-image-flex-container'><HorizontalImageFlex itemArray={flexImages}></HorizontalImageFlex></div>
+        </div>
         </div>
         <Loader type='line-scale' />
         </>
