@@ -68,56 +68,6 @@ const HomePage = () => {
             </div>
             <Loader type='line-scale' />
         </>
-
-
-
-
-
-
-        // <>
-        // 
-        
-        //     <div className='container home-page' style={{overflow: width < breakpointTwo ? 'visible' : 'hidden'}}>
-        //         <div className='page-section'>
-        //             <div className='text-zone' style={{left: width < breakpoint ? '50px' : '120px'}}>
-                        // <h1>
-                        //     <span className={`${letterClass} _11`}>H</span>
-                        //     <span className={`${letterClass} _12`}>e</span>
-                        //     <span className={`${letterClass} _13`}>y,</span>
-                        //     <br />
-                        //     <span className={`${letterClass} _14`}>I</span>
-                        //     <span className={`${letterClass} _15`}>'m</span>
-                        //     <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={16} />
-                        //     <br />
-                        // </h1>
-                        // <div className='word-scroller'>
-                        //     <span>
-                        //         Computer Engineer<br />
-                        //         Software Developer<br />
-                        //         Business Analyst<br />
-                        //         Lifelong Learner
-                        //     </span>
-                        // </div>
-                        // <Link to='/contact' className='contact-button'>CONTACT ME</Link>
-        //             </div>
-
-
-
-        //             <div className='horizontal-image-flex-container'><HorizontalImageFlex itemArray={flexImages}></HorizontalImageFlex></div>
-        //         </div>
-        //         <div className='page-section'>
-        //             <h1>Test test test test test</h1>
-        //             <br/>
-        //             <br/>
-        //             <br/>
-        //             <br/>
-        //             <br/>
-        //             <br/>
-        //             <h1>Test test test test</h1>
-        //         </div>
-        //     </div>
-        // <Loader type='line-scale' />
-        // </>
     );
 };
 
