@@ -18,7 +18,7 @@ const HomePage = () => {
     const nameArray = ' Jacob!'.split('');
 
     const flexImages = [
-        {image: homeBackground4, title: 'Work', header: 'My Experience', paragraphOne: 'Throughout my degree and outside of school, I\'ve worked at a number of companies and gained exposure to a wide range of software and hardware technical skills.', paragraphTwo: 'From backend system frameworks to frontend design libraries, I have experience in distinct programming languages and architectural design concepts.', buttonTo: '/about', buttonText: 'VIEW SKILLS'},
+        {image: homeBackground4, title: 'Work', header: 'My Experience', paragraphOne: 'I\'ve worked academically and in industry with several companies, gaining exposure to a wide range of software and hardware technical skills.', paragraphTwo: 'From backend system frameworks to frontend design libraries, I have experience in distinct programming languages and architectural design concepts.', buttonTo: '/about', buttonText: 'VIEW SKILLS'},
         {image: homeBackground3, title: 'Projects', header: 'My Showcases', paragraphOne: 'There\'s no better way to learn than to get hands-on. I have a number of projects I like to develop outside of work to help with my own learning.', paragraphTwo: 'One of these projects includes making this website from scratch using React and SCSS! Check out my projects page or see my GitHub repository for code samples.', buttonTo: '/projects', buttonText: 'VIEW PORTFOLIO'},
         {image: homeBackground2, title: 'Hobbies', header: 'My Activities', paragraphOne: 'Since my job involves a lot of sitting and staring at lines of code, I like a variety of active hobbies! These include rock climbing, biking, basketball, and photography.', paragraphTwo: 'I was thinking about adding a page to show off my photography. Contact me if you think I should add my pictures as content to this site!', buttonTo: '/contact', buttonText: 'CONTACT ME'},
         {image: homeBackground1, title: 'School', header: 'My Education', paragraphOne: 'I recently obtained my BSc. Computer Engineering degree from the University of Alberta. I went straight into engineering after taking AP courses in high school.', paragraphTwo: 'I am interested in going back for my MBA after getting more industry experience. I am also considering getting a certificate in personal training one day!', buttonTo: '', buttonText: ''},
@@ -62,10 +62,8 @@ const HomePage = () => {
                     </div>
                     <Link to='/contact' className='contact-button'>CONTACT ME</Link>
                 </div>
-
-
                 <div className='content-container'>
-
+                    <HorizontalImageFlex itemArray={flexImages}></HorizontalImageFlex>
                 </div>
             </div>
         </>
@@ -99,11 +97,11 @@ const HomePage = () => {
                         //         Lifelong Learner
                         //     </span>
                         // </div>
-
-
-
                         // <Link to='/contact' className='contact-button'>CONTACT ME</Link>
         //             </div>
+
+
+
         //             <div className='horizontal-image-flex-container'><HorizontalImageFlex itemArray={flexImages}></HorizontalImageFlex></div>
         //         </div>
         //         <div className='page-section'>

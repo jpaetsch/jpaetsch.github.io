@@ -11,6 +11,8 @@
 
   .text-container {
     flex-grow: 4;
+    padding-right: 4rem;
+    padding-bottom: 16rem;
     
     h1 {
       margin-top: 14rem;     
@@ -20,13 +22,13 @@
       }
       
       .first-line {
-        margin-left: 7rem;
+        margin-left: 6rem;
         font-size: 3.5rem;
         font-weight: 400;
       }
 
       .second-line {
-        margin-left: 9rem;
+        margin-left: 8rem;
         font-size: 5.2rem;
         font-weight: 400;
       }
@@ -35,8 +37,8 @@
 
     .word-scroller {
       font-size: 2.5rem;
-      margin-top: 2.5rem;
-      margin-left: 9rem; 
+      margin-top: 3rem;
+      margin-left: 8rem; 
       letter-spacing: 3px;
       height: 1.8em;
       line-height: 1.6em;
@@ -64,7 +66,7 @@
       text-decoration: none;
       padding: 10px 18px;
       position: absolute;
-      margin-left: 7rem;
+      margin-left: 6rem;
       margin-top: 8rem;
       animation: lightSpeedInLeft 1s 1.8s backwards;
       transition: 0.5s;

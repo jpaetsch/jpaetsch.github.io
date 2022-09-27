@@ -1,18 +1,16 @@
 @use '../../styles/themes';
 
 .nav-bar-fixed {
-
-    @include themes.themed() {
-        background: themes.get('sidebar-bg');
-        border-right: themes.get('sidebar-border');
-    }
-    
     width: 70px;
     height: 100vh;
     top: 0;
     left: 0;
-    position: sticky;
+    position: fixed;
     z-index: 3;
+    @include themes.themed() {
+        background: themes.get('sidebar-bg');
+        border-right: themes.get('sidebar-border');
+    }
 
     .top-widget {
         display: block;
