@@ -60,6 +60,7 @@ const HomePage = () => {
                             Lifelong Learner
                         </span>
                     </div>
+                    <Link to='/contact' className='contact-button'>CONTACT ME</Link>
                 </div>
 
 
