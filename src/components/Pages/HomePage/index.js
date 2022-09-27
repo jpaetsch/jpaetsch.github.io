@@ -40,15 +40,26 @@ const HomePage = () => {
             <div className='home-page' style={{flexDirection: width < breakpointTwo ? 'column' : 'row', marginLeft: width < breakpointSidebar ? '0px' : '70px'}}>
                 <div className='text-container'>
                     <h1>
-                        <span className={`${letterClass} _11`}>H</span>
-                        <span className={`${letterClass} _12`}>e</span>
-                        <span className={`${letterClass} _13`}>y,</span>
-                        <br />
-                        <span className={`${letterClass} _14`}>I</span>
-                        <span className={`${letterClass} _15`}>'m</span>
-                        <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={16} />
-                        <br />
+                        <div className='first-line'>
+                            <span className={`${letterClass} _11`}>H</span>
+                            <span className={`${letterClass} _12`}>e</span>
+                            <span className={`${letterClass} _13`}>y,</span>
+                        </div>
+                        <br/>
+                        <div className='second-line'>
+                            <span className={`${letterClass} _17`}>I</span>
+                            <span className={`${letterClass} _18`}>'m</span>
+                            <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={19} />
+                        </div>
                     </h1>
+                    <div className='word-scroller'>
+                        <span>
+                            Computer Engineer<br />
+                            Software Developer<br />
+                            Business Analyst<br />
+                            Lifelong Learner
+                        </span>
+                    </div>
                 </div>
 
 
@@ -79,10 +90,6 @@ const HomePage = () => {
                         //     <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={16} />
                         //     <br />
                         // </h1>
-
-
-
-
                         // <div className='word-scroller'>
                         //     <span>
                         //         Computer Engineer<br />
@@ -91,6 +98,9 @@ const HomePage = () => {
                         //         Lifelong Learner
                         //     </span>
                         // </div>
+
+
+
                         // <Link to='/contact' className='contact-button'>CONTACT ME</Link>
         //             </div>
         //             <div className='horizontal-image-flex-container'><HorizontalImageFlex itemArray={flexImages}></HorizontalImageFlex></div>

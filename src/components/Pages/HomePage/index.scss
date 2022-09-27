@@ -13,19 +13,69 @@
     flex-grow: 4;
     
     h1 {
-      padding-top: 100px;
-      padding-left: 50px;
-      font-size: 5.2rem;
-      font-weight: 400;
+      margin-top: 14rem;     
       @include themes.themed() {
         color: themes.get('home-h1');
         font-family: themes.get('home-h1-font');
+      }
+      
+      .first-line {
+        margin-left: 7rem;
+        font-size: 3.5rem;
+        font-weight: 400;
+      }
+
+      .second-line {
+        margin-left: 9rem;
+        font-size: 5.2rem;
+        font-weight: 400;
+      }
+
+    }
+
+    .word-scroller {
+      font-size: 2.5rem;
+      margin-top: 2.5rem;
+      margin-left: 9rem; 
+      letter-spacing: 3px;
+      height: 1.8em;
+      line-height: 1.6em;
+      position: relative;
+      overflow: hidden;
+      width: 11em;
+      animation: fadeIn 1s 3s backwards;
+      transition: 0.5s;
+      @include themes.themed() {
+        color: themes.get('home-scroller');
+        border-top: themes.get('home-scroller-border');
+        font-family: themes.get('home-scroller-font');
+      }
+  
+      span {
+        position: absolute;
+        top: 0;
+        animation: wordSlide 12s 3.5s infinite;
       }
     }
   }
 
   .content-container {
     flex-grow: 6;
+  }
+}
+
+@keyframes wordSlide {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -1.6em;
+  }
+  50% {
+    top: -3.2em;
+  }
+  75% {
+    top: -4.8em;
   }
 }
 
@@ -86,30 +136,30 @@
 //     }
 //   }
 
-//   .word-scroller {
-//     @include themes.themed() {
-//       color: themes.get('home-scroller');
-//       border-top: themes.get('home-scroller-border');
-//       font-family: themes.get('home-scroller-font');
-//     }
+  // .word-scroller {
+  //   @include themes.themed() {
+  //     color: themes.get('home-scroller');
+  //     border-top: themes.get('home-scroller-border');
+  //     font-family: themes.get('home-scroller-font');
+  //   }
 
-//     font-size: 2.5rem;
-//     margin-top: 0.8em;
-//     letter-spacing: 3px;
-//     height: 1.8em;
-//     line-height: 1.6em;
-//     position: relative;
-//     overflow: hidden;
-//     width: 11em;
-//     animation: fadeIn 1s 3s backwards;
-//     transition: 0.5s;
+  //   font-size: 2.5rem;
+  //   margin-top: 0.8em;
+  //   letter-spacing: 3px;
+  //   height: 1.8em;
+  //   line-height: 1.6em;
+  //   position: relative;
+  //   overflow: hidden;
+  //   width: 11em;
+  //   animation: fadeIn 1s 3s backwards;
+  //   transition: 0.5s;
 
-//     span {
-//       position: absolute;
-//       top: 0;
-//       animation: wordSlide 12s 3.5s infinite;
-//     }
-//   }
+  //   span {
+  //     position: absolute;
+  //     top: 0;
+  //     animation: wordSlide 12s 3.5s infinite;
+  //   }
+  // }
 
 //   .contact-button {
 
