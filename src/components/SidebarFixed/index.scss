@@ -9,7 +9,6 @@
     z-index: 3;
     @include themes.themed() {
         background: themes.get('sidebar-bg');
-        border-right: themes.get('sidebar-border');
     }
 
     .top-widget {
@@ -23,10 +22,6 @@
             height: auto;
             
             &.upper-pic {
-                
-                @include themes.themed() {
-                    border: themes.get('sidebar-border');
-                }
                 border-radius: 1.8rem 1.8rem .25rem 0.25rem;
             }
 

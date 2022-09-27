@@ -13,7 +13,6 @@
 
         @include themes.themed() {
             background: themes.get('sidebar-bg');
-            border-right: themes.get('sidebar-border');
         }
 
         transform: translateX(-285px);
@@ -22,15 +21,11 @@
         img {
             display: block;
             margin-left: 8rem;
+            padding-top: 2rem;
             width: 120px;
             height: auto;
             
             &.upper-pic {
-                
-                @include themes.themed() {
-                    border: themes.get('sidebar-border');
-                }
-
                 border-radius: 10rem 10rem 2rem 2rem;
             }
 
