@@ -9,8 +9,10 @@
     height: 100%;
     transition: width 0.5s ease;
     overflow: hidden;
+    transform: translate3d(0, 0, 0);
 
     &:before, &:after {
+      transform: translate3d(0, 0, 0);
       content: '';
       position: absolute;
       left: 0;

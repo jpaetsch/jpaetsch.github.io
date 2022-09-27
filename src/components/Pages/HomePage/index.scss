@@ -45,7 +45,7 @@
       position: relative;
       overflow: hidden;
       width: 11em;
-      animation: fadeIn 1s 3s backwards;
+      animation: fadeIn 2s 5s backwards;
       transition: 0.5s;
       @include themes.themed() {
         color: themes.get('home-scroller');
@@ -56,7 +56,7 @@
       span {
         position: absolute;
         top: 0;
-        animation: wordSlide 12s 3.5s infinite;
+        animation: wordSlide 12s 5.5s infinite;
       }
     }
 
@@ -68,7 +68,7 @@
       position: absolute;
       margin-left: 6rem;
       margin-top: 8rem;
-      animation: lightSpeedInLeft 1s 1.8s backwards;
+      animation: fadeIn 2s 3s backwards;
       transition: 0.5s;
       @include themes.themed() {
         color: themes.get('home-contact-button');
@@ -87,6 +87,7 @@
 
   .content-container {
     flex-grow: 6;
+    animation: fadeIn 2s 4s backwards;
   }
 }
 

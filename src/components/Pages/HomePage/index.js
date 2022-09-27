@@ -66,6 +66,7 @@ const HomePage = () => {
                     <HorizontalImageFlex itemArray={flexImages}></HorizontalImageFlex>
                 </div>
             </div>
+            <Loader type='line-scale' />
         </>
 
 
