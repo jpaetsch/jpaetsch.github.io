@@ -1,0 +1,27 @@
+.vertical-cards-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 4rem;
+    align-items: center;
+    padding-bottom: 10vh;
+    justify-content: space-around;
+
+    .card {
+        border: 1px solid #fff;
+        width: 80%;
+
+        .card-image {
+            height: 60vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: top;
+        }
+
+        .card-title {
+            p {
+                font-size: 2rem;
+            }
+        }
+    }
+}

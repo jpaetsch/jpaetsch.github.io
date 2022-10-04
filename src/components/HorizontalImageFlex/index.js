@@ -7,8 +7,7 @@ const HorizontalImageFlex = ({itemArray}) => {
     
     return (
         <div className='timeline'>
-            {
-            itemArray.map((aColumn, idx) => (
+            {itemArray.map((aColumn, idx) => (
                 <div className='tl-item' key={idx} style={{width: widthPercentage}}>
                     <div className='tl-bg' style={{backgroundImage: `url(${aColumn.image})`}}></div>
                     <div className='tl-title'>
@@ -22,8 +21,7 @@ const HorizontalImageFlex = ({itemArray}) => {
                         {aColumn.buttonTo === "" ? null : <Link to={aColumn.buttonTo} className='sub-button'>{aColumn.buttonText}</Link>}
                     </div>
                 </div>
-            ))
-            }
+            ))}
         </div>
     );
 };

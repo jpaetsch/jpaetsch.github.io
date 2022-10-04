@@ -12,7 +12,7 @@
   .text-container {
     flex-grow: 4;
     padding-right: 4rem;
-    padding-bottom: 30vh;
+    padding-bottom: 28vh;
     
     h1 {
       margin-top: 8.5rem;     
@@ -44,7 +44,7 @@
       position: relative;
       overflow: hidden;
       width: 11em;
-      animation: fadeIn 2s 5s backwards;
+      animation: fadeIn 2s 4.5s backwards;
       transition: 0.5s;
       @include themes.themed() {
         color: themes.get('home-scroller');
