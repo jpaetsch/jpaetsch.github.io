@@ -5,7 +5,7 @@
     .hamburger-menu {
 
         height: 100vh;
-        position: sticky;
+        position: fixed;
         top: 0;
         left: 0;
         width: 280px;
@@ -20,7 +20,7 @@
 
         img {
             display: block;
-            margin-left: 8rem;
+            margin-left: 90px;
             padding-top: 2rem;
             width: 120px;
             height: auto;
@@ -38,9 +38,8 @@
             display: block;
             text-align: left;
             position: absolute;
-            height: auto;
             margin-left: 50px;
-            margin-top: 20px;
+            margin-top: 40px;
             width: 250px;
     
             a {
@@ -48,16 +47,15 @@
                     font-family: themes.get('sidebar-font');
                     color: themes.get('sidebar-unselected-major-icon');
                 }
-
+                
                 font-size: 20px;
                 letter-spacing: 2px;
                 display: block;
                 line-height: 51px;
                 height: 51px;
-                position: relative;
                 text-decoration: none;
                 transition: all 0.3s ease-out;
-
+                position: relative;
     
                 svg {
                     transition: all 0.3s ease-out;
@@ -189,7 +187,7 @@
         align-items: center;
         font-size: 16px;
         position: absolute;
-        top: 95%;
+        top: 90%;
 
         a {
             svg {
