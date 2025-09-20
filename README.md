@@ -1,32 +1,69 @@
-# Personal Website - hosted on GitHub Pages
+# React + TypeScript + Vite
 
-## Table of Contents
-* [Summary](#summary)
-* [Setup & Usage](#setup-&-usage)
-* [Technologies](#technologies)
-* [Inspiration](#inspiration)
-* [Sources](#sources)
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Summary
-A personal website for my personal information and portfolio. This project also serves as practice for frontend design, development using React and frontend animation, and a place to direct potential job opportunities.
+Currently, two official plugins are available:
 
-## Setup & Usage
-The site is hosted [here](https://jpaetsch.github.io/)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Potential Improvements
-* Continue to improve, see GitHub Issues
+## Expanding the ESLint configuration
 
-## Technologies
-* React (JavaScript library)
-* CSS, HTML, and SASS (CSS extension language)
-* GitHub Pages (deployment/hosting)
-* FortAwesome (free icons and fonts)
-* Animate.css (see https://animate.style/)
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-## Inspiration
-At the beginning of this project, I had little familarity with the React library or frontend development using JavaScript. I wanted to gain experience in these areas and have a website of my own to personalize and continue to improve over time as I add new projects to my portfolio. In addition, I want to practice animation, responsive web design, and other modern web development concepts.
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
 
-## Sources
-Online resources used extensively.
-Original site was created following the [YouTube tutorial](https://www.youtube.com/watch?v=bmpI252DmiI) made by the [freeCodeCamp.org channel](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ) and frontend developer Slobodan.
-[This](https://www.youtube.com/watch?v=4UZrsTqkcW4&ab_channel=freeCodeCamp.org) comprehensive React tutorial was also very helpful in getting a deeper dive into more advanced concepts.
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
+
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
+
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
+
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
