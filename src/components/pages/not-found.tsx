@@ -1,7 +1,7 @@
 import { House, Unplug } from "lucide-react";
 import { Link } from "react-router";
 
-const NotFoundPage = () => {
+export const NotFoundPage = () => {
   return (
     <div className="mt-40 flex flex-col items-center justify-center">
       <span className="flex items-center justify-center">
@@ -26,5 +26,3 @@ const NotFoundPage = () => {
     </div>
   );
 };
-
-export default NotFoundPage;
