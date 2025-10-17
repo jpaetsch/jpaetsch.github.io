@@ -1,5 +1,6 @@
 import { ContactPage, HomePage, NotFoundPage } from "@/components/pages";
-import { createBrowserRouter, RouterProvider } from "react-router";
+import { createBrowserRouter } from "react-router";
+import { RouterProvider } from "react-router/dom";
 import { RootLayout } from "./components/layouts";
 import "./globals.css";
 import { ThemeProvider } from "./providers/theme";
